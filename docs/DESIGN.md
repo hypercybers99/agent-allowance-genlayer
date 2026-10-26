@@ -1,7 +1,7 @@
 # System Architecture and Design Document
 
 ## 1. Overview and Pitch
-Agent Allowance is an intelligent spending account contract system (`AllowanceVault` and `SpendGate`) designed for autonomous AI agents on GenLayer Studionet (Preview). Every spend requested by an agent must be backed by verifiable, public invoice evidence. 
+Agent Allowance is an intelligent spending account contract system (`AllowanceVault` and `SpendGate`) designed for AI agents on GenLayer Studionet (Preview). Every spend requested by an agent must be backed by verifiable, public invoice evidence. 
 
 In traditional blockchains, smart contracts cannot read external web pages or parse unstructured documents. Centralized oracles introduce trust assumptions and single points of failure. In Agent Allowance, independent GenLayer validators read the invoice web page, run an LLM to extract itemized billing data (total amount, currency, goods/services category, and verbatim quote), check the quote verbatim against the document, and execute or deny the payment under decentralized consensus.
 
@@ -92,3 +92,18 @@ All persistent state resides in `TreeMap[str, str]` storing canonical JSON with 
 2. `account.spent <= account.total_budget` (Budget ceiling respected).
 3. `account.spend_count <= account.max_spends` (Spend count ceiling respected).
 4. Every executed spend transfers exactly its amount once.
+
+---
+
+## 7. Merchant Integration: SpendGate
+Downstream automated services and API providers cannot rely on client assertions that payment succeeded. `SpendGate` provides merchant-side fulfillment verification:
+- `is_spend_valid_for(spend_id, account_id, payee, amount, policy_hash) -> bool`: Performs an on-chain synchronous cross-contract read (`AllowanceVault(vault).spend_receipt(spend_id)`) to verify that the spend is approved, executed, matches the declared account, payee, amount, and policy hash.
+- `serve(...) -> None`: Allows the payee to register fulfillment. If called again with the same spend ID, it reverts with `"spend already served"`. If called by any non-payee, it reverts with `"sender must equal payee"`.
+
+## 8. Evidence Archival Architecture
+All empirical results are archived as immutable, verifiable raw JSON files:
+- `docs/evidence/receipts/`: Raw RPC transaction receipts and consensus payloads for all deploys, accounts, 13 canonical runs, and resolutions.
+- `docs/evidence/spendgate/`: Raw verification read-backs and execution receipts for `SpendGate`.
+- `docs/evidence/negative/`: Raw transaction results capturing decoded `gl.vm.UserError` exceptions for 8 error categories.
+- `docs/evidence/robustness/`: 60 individual raw on-chain execution files from the `ProbeExtract` harness across 6 invoice targets.
+- `docs/evidence/latency_benchmark.json`: Dedicated single-session latency benchmark data across 3 pipeline groups.

@@ -64,3 +64,42 @@ Following all 13 canonical requests and owner resolution operations, the contrac
 - Total in Contract: 1950 + 50 = **2000**
 - `get_stats().total_minted`: **2000**
 - **Conservation Invariant Status**: **PASSED (100% exact balance conservation)**
+
+---
+
+## 5. Raw Transaction Receipts (`docs/evidence/receipts/`)
+Every deployed contract, administrative action, 13 canonical requests, resolutions, and negative attempts are captured as individual raw receipt files in `docs/evidence/receipts/` (27 total files). Each file contains:
+- `tx_hash`
+- `status` (`ACCEPTED` / `FINALIZED`)
+- `leader_status` (`SUCCESS` / `ERROR`)
+- `consensus_status` (`MAJORITY_AGREE` / `MAJORITY_DISAGREE`)
+- Full validator responses, votes, gas, and block timestamps.
+
+## 6. SpendGate Verification Evidence (`docs/evidence/spendgate/`)
+Full on-chain consumer integration verified against active SpendGate `0xAe5aD4f836f199B56307b5E018eF3be8b8dd0528`:
+- `valid_r1.json`: `is_spend_valid_for` returns `true` for canonical Spend 1.
+- `altered_account.json`: `is_spend_valid_for` returns `false` when account is altered.
+- `altered_payee.json`: `is_spend_valid_for` returns `false` when payee is altered.
+- `altered_amount.json`: `is_spend_valid_for` returns `false` when amount is altered.
+- `altered_policy_hash.json`: `is_spend_valid_for` returns `false` when policy hash is altered.
+- `serve_success.json`: `serve(1)` succeeds when called by the authorized payee `0x3a60a7F8e9323F67eE30B669931792671569B30d`.
+- `serve_duplicate.json`: Refuses duplicate `serve(1)` with decoded `gl.vm.UserError("spend already served")`.
+- `serve_denied.json`: Refuses `serve(3)` for a DENIED spend with decoded `gl.vm.UserError("spend not valid for these parameters")`.
+- `serve_non_payee.json`: Refuses `serve(1)` from non-payee with decoded `gl.vm.UserError("sender must equal payee")`.
+
+## 7. Negative & Edge Cases Evidence (`docs/evidence/negative/`)
+All edge cases and protocol guards are verified on Studionet with decoded `gl.vm.UserError` payloads:
+- `url_404.json`: Missing invoice under valid prefix (`404 Not Found`) -> `"HTTP status not 200: 404"`.
+- `too_short.json`: Fixture under 100 characters (`inv-i-short.md`, 40 chars) -> `"page unreadable (too little text; it may need JavaScript)"`.
+- `duplicate_obs.json`: Duplicate observation ID submission -> `"duplicate observation: 15"`.
+- `not_agent.json`: Spend request attempted by unauthorized address -> `"not a registered agent"`.
+- `closed_account.json`: Spend request against closed account -> `"account closed"`.
+- `funding_budget_breach.json`: Funding amount exceeding policy total budget -> `"funding exceeds the budget rule"`.
+- `bad_prefix.json`: 4 invalid prefix attempts (missing trailing slash, userinfo, query, non-https scheme).
+- `resolve_non_pending.json`: Owner attempting to resolve an already-decided spend -> `"spend not pending"`.
+
+## 8. Dedicated Latency Benchmark Evidence (`docs/evidence/latency_benchmark.json`)
+Measured in a single dedicated session across 13 consecutive on-chain runs:
+- **5 Pre-Fetch Gates**: min 8.69s, median 12.10s, max 15.60s.
+- **3 Tripwires**: min 8.71s, median 12.13s, max 18.75s.
+- **5 Judged Invoices**: min 15.42s, median 18.67s, max 22.00s.
