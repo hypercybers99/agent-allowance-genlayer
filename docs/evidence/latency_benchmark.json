@@ -1,0 +1,145 @@
+{
+  "timestamp": "2026-10-26T04:29:10.780Z",
+  "sessionType": "single_dedicated_session",
+  "gates": [
+    {
+      "caseName": "over_cap",
+      "latency": 12.1,
+      "txHash": "0x9f9005d0e04cc377343f8395e6d6ba4c0fd5e18318400f5ec55890707dc43592",
+      "decision": "DENIED",
+      "reason": "over_cap"
+    },
+    {
+      "caseName": "over_budget",
+      "latency": 15.6,
+      "txHash": "0x7ba333a235d43fda2ea85f13796ce074acc8180a65f5c27c3336c0ed7bc6e886",
+      "decision": "DENIED",
+      "reason": "over_budget"
+    },
+    {
+      "caseName": "payee_unknown",
+      "latency": 12.32,
+      "txHash": "0xbe710bebd48078a591b68c2da32d3b445092f1687f8afaed2bfd5dc271fb3da8",
+      "decision": "DENIED",
+      "reason": "payee_unknown"
+    },
+    {
+      "caseName": "evidence_not_bound",
+      "latency": 8.69,
+      "txHash": "0x0175819c1e662dfb7b581ff89fede2ba9e7d66c2f4558115102c735e9a826d68",
+      "decision": "DENIED",
+      "reason": "evidence_not_bound"
+    },
+    {
+      "caseName": "category_not_allowed",
+      "latency": 8.71,
+      "txHash": "0xeec623cce79af8aff88a127c69042dec56596cb62a663a45e7478ef0908062f6",
+      "decision": "DENIED",
+      "reason": "category_not_allowed"
+    }
+  ],
+  "tripwires": [
+    {
+      "runIndex": 1,
+      "latency": 12.13,
+      "txHash": "0xd2560e54c28b5fcadf2c6222dce32dce361953f9625e7643a0c0737cd033ecd2",
+      "decision": "PENDING",
+      "reason": "tripwire"
+    },
+    {
+      "runIndex": 2,
+      "latency": 8.71,
+      "txHash": "0xc25a15347c08485d1c6159bdd4d0b86e60cdad0f120c92d1f6cb08523bf0b5e6",
+      "decision": "PENDING",
+      "reason": "tripwire"
+    },
+    {
+      "runIndex": 3,
+      "latency": 18.75,
+      "txHash": "0x6d555baf023cfc677c27b61aca3278295c5b07627da372151900a71bbcb80dd4",
+      "decision": "PENDING",
+      "reason": "tripwire"
+    }
+  ],
+  "judged": [
+    {
+      "caseName": "inv-a-120.md (Markdown)",
+      "file": "cloudco/inv-a-120.md",
+      "latency": 18.67,
+      "txHash": "0x6c2ac7634659a8171ad84363121e346cdd66a911c7ba6aa742281f12f4149f6b",
+      "decision": "DENIED",
+      "reason": "insufficient_account_balance"
+    },
+    {
+      "caseName": "inv-a-120.html (HTML)",
+      "file": "cloudco/inv-a-120.html",
+      "latency": 15.42,
+      "txHash": "0x4370325b3546b5eeea493e1c84a2095f8f0019ad5611accc157526c7c10df9b1",
+      "decision": "DENIED",
+      "reason": "insufficient_account_balance"
+    },
+    {
+      "caseName": "inv-b-450.md (Amount mismatch)",
+      "file": "cloudco/inv-b-450.md",
+      "latency": 22,
+      "txHash": "0xd507e6c9c47ce4d76545c01ae6144253072d0840daf273f4752dc0de2e8ef8f3",
+      "decision": "DENIED",
+      "reason": "amount_mismatch"
+    },
+    {
+      "caseName": "inv-c-no-total.md (No total)",
+      "file": "cloudco/inv-c-no-total.md",
+      "latency": 18.78,
+      "txHash": "0xe3cfc9a57b54750812c25ebcb142fef1ba8f91841a57fcf02f9266a82663de36",
+      "decision": "PENDING",
+      "reason": "quote_not_found"
+    },
+    {
+      "caseName": "inv-e-90.md (DataShop)",
+      "file": "datashop/inv-e-90.md",
+      "latency": 18.26,
+      "txHash": "0xd1863b002d2f4b20c1ac136e66685f445a49c6f9e545f7f3c8c640cf971b812c",
+      "decision": "DENIED",
+      "reason": "insufficient_account_balance"
+    }
+  ],
+  "stats": {
+    "gates": {
+      "min": 8.69,
+      "median": 12.1,
+      "max": 15.6,
+      "count": 5,
+      "values": [
+        8.69,
+        8.71,
+        12.1,
+        12.32,
+        15.6
+      ]
+    },
+    "tripwires": {
+      "min": 8.71,
+      "median": 12.13,
+      "max": 18.75,
+      "count": 3,
+      "values": [
+        8.71,
+        12.13,
+        18.75
+      ]
+    },
+    "judged": {
+      "min": 15.42,
+      "median": 18.67,
+      "max": 22,
+      "count": 5,
+      "values": [
+        15.42,
+        18.26,
+        18.67,
+        18.78,
+        22
+      ]
+    }
+  }
+}

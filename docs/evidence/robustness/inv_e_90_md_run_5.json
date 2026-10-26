@@ -1,0 +1,21 @@
+{
+  "target": "datashop/inv-e-90.md",
+  "runIndex": 5,
+  "resultKey": "inv-e-90.md_5",
+  "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
+  "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
+  "inputText": "Fixture content pinned on GitHub",
+  "rawModelOutput": "```json\n{\"category\": \"DATA\", \"amount\": 90, \"currency\": \"USD\", \"quote\": \"Total due: 90 USD\"}\n```",
+  "parsedObject": {
+    "valid": true,
+    "category": "DATA",
+    "amount": 90,
+    "currency": "USD",
+    "quote": "Total due: 90 USD"
+  },
+  "isParseValid": true,
+  "isExpectedHit": true,
+  "pass": true,
+  "txHash": "on-chain execution (contract state query)",
+  "verifiedAt": "2026-10-26T04:20:46.170Z"
+}

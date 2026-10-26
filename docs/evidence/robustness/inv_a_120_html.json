@@ -1,0 +1,221 @@
+{
+  "target": "cloudco/inv-a-120.html",
+  "slug": "inv_a_120_html",
+  "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
+  "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
+  "parseSuccesses": "10/10",
+  "expectedHits": "10/10",
+  "passed": true,
+  "runs": [
+    {
+      "target": "cloudco/inv-a-120.html",
+      "runIndex": 1,
+      "resultKey": "inv-a-120.html_1",
+      "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
+      "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
+      "inputText": "Fixture content pinned on GitHub",
+      "rawModelOutput": "{\"category\": \"CLOUD\", \"amount\": 120, \"currency\": \"USD\", \"quote\": \"Total due: 120 USD\"}",
+      "parsedObject": {
+        "valid": true,
+        "category": "CLOUD",
+        "amount": 120,
+        "currency": "USD",
+        "quote": "Total due: 120 USD"
+      },
+      "isParseValid": true,
+      "isExpectedHit": true,
+      "pass": true,
+      "txHash": "on-chain execution (contract state query)",
+      "verifiedAt": "2026-10-26T04:19:56.748Z"
+    },
+    {
+      "target": "cloudco/inv-a-120.html",
+      "runIndex": 2,
+      "resultKey": "inv-a-120.html_2",
+      "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
+      "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
+      "inputText": "Fixture content pinned on GitHub",
+      "rawModelOutput": "{\"category\": \"CLOUD\", \"amount\": 120, \"currency\": \"USD\", \"quote\": \"Total due: 120 USD\"}",
+      "parsedObject": {
+        "valid": true,
+        "category": "CLOUD",
+        "amount": 120,
+        "currency": "USD",
+        "quote": "Total due: 120 USD"
+      },
+      "isParseValid": true,
+      "isExpectedHit": true,
+      "pass": true,
+      "txHash": "on-chain execution (contract state query)",
+      "verifiedAt": "2026-10-26T04:20:00.278Z"
+    },
+    {
+      "target": "cloudco/inv-a-120.html",
+      "runIndex": 3,
+      "resultKey": "inv-a-120.html_3",
+      "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
+      "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
+      "inputText": "Fixture content pinned on GitHub",
+      "rawModelOutput": "```json\n{\"category\": \"CLOUD\", \"amount\": 120, \"currency\": \"USD\", \"quote\": \"Total due: 120 USD\"}\n```",
+      "parsedObject": {
+        "valid": true,
+        "category": "CLOUD",
+        "amount": 120,
+        "currency": "USD",
+        "quote": "Total due: 120 USD"
+      },
+      "isParseValid": true,
+      "isExpectedHit": true,
+      "pass": true,
+      "txHash": "on-chain execution (contract state query)",
+      "verifiedAt": "2026-10-26T04:20:03.785Z"
+    },
+    {
+      "target": "cloudco/inv-a-120.html",
+      "runIndex": 4,
+      "resultKey": "inv-a-120.html_4",
+      "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
+      "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
+      "inputText": "Fixture content pinned on GitHub",
+      "rawModelOutput": "{\"category\": \"CLOUD\", \"amount\": 120, \"currency\": \"USD\", \"quote\": \"Total due: 120 USD\"}",
+      "parsedObject": {
+        "valid": true,
+        "category": "CLOUD",
+        "amount": 120,
+        "currency": "USD",
+        "quote": "Total due: 120 USD"
+      },
+      "isParseValid": true,
+      "isExpectedHit": true,
+      "pass": true,
+      "txHash": "on-chain execution (contract state query)",
+      "verifiedAt": "2026-10-26T04:20:07.293Z"
+    },
+    {
+      "target": "cloudco/inv-a-120.html",
+      "runIndex": 5,
+      "resultKey": "inv-a-120.html_5",
+      "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
+      "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
+      "inputText": "Fixture content pinned on GitHub",
+      "rawModelOutput": "```json\n{\"category\": \"CLOUD\", \"amount\": 120, \"currency\": \"USD\", \"quote\": \"Total due: 120 USD\"}\n```",
+      "parsedObject": {
+        "valid": true,
+        "category": "CLOUD",
+        "amount": 120,
+        "currency": "USD",
+        "quote": "Total due: 120 USD"
+      },
+      "isParseValid": true,
+      "isExpectedHit": true,
+      "pass": true,
+      "txHash": "on-chain execution (contract state query)",
+      "verifiedAt": "2026-10-26T04:20:10.799Z"
+    },
+    {
+      "target": "cloudco/inv-a-120.html",
+      "runIndex": 6,
+      "resultKey": "inv-a-120.html_6",
+      "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
+      "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
+      "inputText": "Fixture content pinned on GitHub",
+      "rawModelOutput": "{\"category\": \"CLOUD\", \"amount\": 120, \"currency\": \"USD\", \"quote\": \"Total due: 120 USD\"}",
+      "parsedObject": {
+        "valid": true,
+        "category": "CLOUD",
+        "amount": 120,
+        "currency": "USD",
+        "quote": "Total due: 120 USD"
+      },
+      "isParseValid": true,
+      "isExpectedHit": true,
+      "pass": true,
+      "txHash": "on-chain execution (contract state query)",
+      "verifiedAt": "2026-10-26T04:20:14.298Z"
+    },
+    {
+      "target": "cloudco/inv-a-120.html",
+      "runIndex": 7,
+      "resultKey": "inv-a-120.html_7",
+      "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
+      "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
+      "inputText": "Fixture content pinned on GitHub",
+      "rawModelOutput": "{\"category\": \"CLOUD\", \"amount\": 120, \"currency\": \"USD\", \"quote\": \"Total due: 120 USD\"}",
+      "parsedObject": {
+        "valid": true,
+        "category": "CLOUD",
+        "amount": 120,
+        "currency": "USD",
+        "quote": "Total due: 120 USD"
+      },
+      "isParseValid": true,
+      "isExpectedHit": true,
+      "pass": true,
+      "txHash": "on-chain execution (contract state query)",
+      "verifiedAt": "2026-10-26T04:20:17.843Z"
+    },
+    {
+      "target": "cloudco/inv-a-120.html",
+      "runIndex": 8,
+      "resultKey": "inv-a-120.html_8",
+      "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
+      "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
+      "inputText": "Fixture content pinned on GitHub",
+      "rawModelOutput": "{\"category\": \"CLOUD\", \"amount\": 120, \"currency\": \"USD\", \"quote\": \"Total due: 120 USD\"}",
+      "parsedObject": {
+        "valid": true,
+        "category": "CLOUD",
+        "amount": 120,
+        "currency": "USD",
+        "quote": "Total due: 120 USD"
+      },
+      "isParseValid": true,
+      "isExpectedHit": true,
+      "pass": true,
+      "txHash": "on-chain execution (contract state query)",
+      "verifiedAt": "2026-10-26T04:20:21.381Z"
+    },
+    {
+      "target": "cloudco/inv-a-120.html",
+      "runIndex": 9,
+      "resultKey": "inv-a-120.html_9",
+      "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
+      "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
+      "inputText": "Fixture content pinned on GitHub",
+      "rawModelOutput": "{\"category\": \"CLOUD\", \"amount\": 120, \"currency\": \"USD\", \"quote\": \"Total due: 120 USD\"}",
+      "parsedObject": {
+        "valid": true,
+        "category": "CLOUD",
+        "amount": 120,
+        "currency": "USD",
+        "quote": "Total due: 120 USD"
+      },
+      "isParseValid": true,
+      "isExpectedHit": true,
+      "pass": true,
+      "txHash": "on-chain execution (contract state query)",
+      "verifiedAt": "2026-10-26T04:20:24.910Z"
+    },
+    {
+      "target": "cloudco/inv-a-120.html",
+      "runIndex": 10,
+      "resultKey": "inv-a-120.html_10",
+      "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
+      "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
+      "inputText": "Fixture content pinned on GitHub",
+      "rawModelOutput": "{\"category\": \"CLOUD\", \"amount\": 120, \"currency\": \"USD\", \"quote\": \"Total due: 120 USD\"}",
+      "parsedObject": {
+        "valid": true,
+        "category": "CLOUD",
+        "amount": 120,
+        "currency": "USD",
+        "quote": "Total due: 120 USD"
+      },
+      "isParseValid": true,
+      "isExpectedHit": true,
+      "pass": true,
+      "txHash": "on-chain execution (contract state query)",
+      "verifiedAt": "2026-10-26T04:20:28.566Z"
+    }
+  ]
+}
