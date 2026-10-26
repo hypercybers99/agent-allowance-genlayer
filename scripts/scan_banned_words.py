@@ -8,6 +8,7 @@ BANNED_PATTERNS = [
     (r'\btampered\b', 'tampered'),
     (r'\bbytecode\b', 'bytecode'),
     (r'\btestnet\b', 'testnet'),
+    (r'\bautonomous\b', 'autonomous'),
     (r'\bunanimous(ly)?\b', 'unanimous'),
     (r'\brevolutionary\b', 'revolutionary'),
     (r'\bno\s+other\s+contract\b', 'no other contract'),

@@ -37,3 +37,6 @@ Because run 9 threw an uncaught network exception in the batch script, a standal
 - **Initial Batch Run 9 Failure Reason**: Studionet RPC gateway HTTP 502 / socket reset error during consensus wait.
 - **Standalone Rerun Batch (`inv_c_rerun.json`)**: 10/10 valid JSON parses, 10/10 expected hits (`amount == 0`), latencies 8.48s - 32.29s.
 Under Part 1 Rule 9 of the build rules, an undisclosed rerun of a target counts as an iteration. Therefore, this rerun is formally classified as **Iteration 1 (Operational/RPC resilience rerun, zero prompt modifications)**.
+
+## Empirical Raw Evidence Archival (`docs/evidence/robustness/`)
+Every individual run across all 6 targets is archived on disk as an independent JSON record (`docs/evidence/robustness/<slug>_run_<N>.json`, 60 files total), complemented by aggregated target summaries (`docs/evidence/robustness/<slug>.json`). Each file records the complete transaction receipt, execution status, consensus agreement, latency, and extracted payload.
