@@ -24,19 +24,36 @@ This document compares the pre-registered predictions (from `fixtures/EXPECTED.m
 - R5 initially evaluated to `PENDING` (`ASK_OWNER`) on-chain due to the injection tripwire, and was subsequently resolved by the owner via `resolve_spend(5, false)` resulting in final status `OWNER_REJECTED`.
 - R6 initially evaluated to `PENDING` (`ASK_OWNER`) on-chain because the proforma notice had no total (quote check failed), and was subsequently resolved by the owner via `resolve_spend(6, true)` resulting in final status `OWNER_APPROVED`.
 
-## Latency Analysis
-- **Gate-Only Denials (no external fetch or model call)**:
-  - R4 (`over_cap`): 8.45s
-  - R5 (`tripwire`): 8.49s
-  - R9 (`evidence_not_bound`): 8.52s
-  - Average Gate Latency: ~8.49s
-- **Judged Spends (web fetch + model extraction)**:
-  - R1: 15.03s
-  - R2: 18.60s
-  - R3: 15.07s
-  - R6: 15.09s
-  - R7: 14.99s
-  - R8: 18.44s
-  - R12: 18.41s
-  - Average Judged Latency: ~16.52s
-- **Pre-Gate Latency Advantage**: Gated requests execute ~8.03 seconds faster than full natural language invoice judgements.
+## Latency & Pipeline Analysis
+
+The 13 canonical requests exercise three distinct operational execution paths through the `AllowanceVault` pipeline:
+
+1. **Pre-Fetch Storage Gates (Skips both Web Fetch and Model Prompt)**:
+   - Requests:
+     - **R4** (`over_cap`): 8.45s — Declared amount 450 exceeds policy cap 300.
+     - **R9** (`evidence_not_bound`): 8.52s — Evidence URL host/path does not match registered prefix for CloudCo.
+     - **R10** (`payee_unknown`): 15.24s — Payee AdSy is not registered in the policy payees list.
+     - **R11** (`category_not_allowed`): 11.82s — Declared category MARKETING is not in policy allowed categories.
+     - **R13** (`over_budget`): 11.77s — Declared amount 180 would exceed remaining policy budget.
+   - Mechanism: Validates declared metadata strictly against stored account configuration. Returns `DENY` before calling `gl.nondet.web.get` or `gl.nondet.exec_prompt`.
+   - Measured Latency Range: 8.45s to 15.24s (Average: 11.16s). The variation reflects Studionet block packaging and validator consensus round intervals rather than I/O workload.
+
+2. **Tripwire Gates (Executes Web Fetch & Strip, Skips Model Prompt)**:
+   - Requests:
+     - **R5** (`tripwire`): 8.49s — Fetches raw document over HTTPS, cleans text, detects prompt injection phrase (`ignore previous instructions`), and immediately returns `ASK_OWNER`.
+   - Mechanism: Only `gl.nondet.web.get` and local Python string normalization are executed. The expensive LLM prompt (`gl.nondet.exec_prompt`) is completely bypassed.
+   - Measured Latency: 8.49s.
+
+3. **Judged Invoices (Full Pipeline: Web Fetch + Strip + Model Prompt + Quote Parity)**:
+   - Requests:
+     - **R1** (120 CLOUD Markdown): 15.03s
+     - **R2** (120 CLOUD HTML): 18.60s
+     - **R3** (100 CLOUD vs 120 declared): 15.07s
+     - **R6** (120 CLOUD no total): 15.09s
+     - **R7** (90 DATA): 14.99s
+     - **R8** (90 DATA EUR): 18.44s
+     - **R12** (60 CLOUD vs MARKETING actual): 18.41s
+   - Mechanism: Executes HTTPS fetch, HTML tag stripping, LLM extraction via prompt, token quote verification, amount-in-quote validation, and deterministic policy rule checking.
+   - Measured Latency Range: 14.99s to 18.60s (Average: 16.52s).
+
+*(Note: See Task F for the dedicated single-session re-benchmarking across all three groups).*

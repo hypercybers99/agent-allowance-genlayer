@@ -17,6 +17,9 @@ This document records the exact hashes, addresses, latencies, and source code ve
 - **Source SHA-256**: `ff656818cd98e7387794cce80dc0f0bb8da8b6a85e80a8deaa2e20087866b4ea`
 - **Explorer URL**: [https://explorer-studio.genlayer.com/address/0xd89C4fCB63773C01e8494EebaE7375C4d5992E07](https://explorer-studio.genlayer.com/address/0xd89C4fCB63773C01e8494EebaE7375C4d5992E07)
 
+> [!NOTE] Superseded Deployment Record
+> Contract address `0x63D63C490AD9Cf9C35E196D8366e23748212C5c2` (deploy tx `0xba40c31c067912e8a5f425f69b4f068a4007c6f555262594517829777c327a9f`) was an earlier deployment attempt that encountered Studionet RPC quota exhaustion (500 req/hr rate limit) during account creation and initial funding. It was superseded by active vault `0xd89C4fCB63773C01e8494EebaE7375C4d5992E07`, on which the complete 13-spend canonical lifecycle, invariants, and resolutions were executed.
+
 ### SpendGate (Merchant Integration Consumer)
 - **Contract Address**: `0xAe5aD4f836f199B56307b5E018eF3be8b8dd0528`
 - **Deploy Transaction Hash**: `0x3ab3717dfb119cb45a4773ebfc48d9aa1787c9339e1f5c66b8d276b89ae6e10f`

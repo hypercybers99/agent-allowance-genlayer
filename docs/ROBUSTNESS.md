@@ -27,3 +27,13 @@ This document pre-registers the empirical robustness evaluation protocol for the
 ## Iteration Rules
 - Maximum of 2 prompt iterations permitted.
 - If an iteration is required, the precise failure reason must be logged, a new rule file committed, and all affected documents re-evaluated across a fresh 10-run batch.
+
+## Empirical Audit & Rerun Accounting (Iteration 1 under Rule 9)
+In the initial robustness evaluation run (`scripts/run_robustness.js`), targets 1-4 and 6 ran smoothly with 10/10 parse and 10/10 hit rates.
+During the evaluation of target 5 (`cloudco/inv-c-no-total.md`), run 9 encountered a transient RPC network / gateway error (HTTP 502 returning an HTML error page rather than JSON-RPC), causing an unhandled socket rejection in `run_robustness.js` before receipt capture.
+Because run 9 threw an uncaught network exception in the batch script, a standalone script `scripts/rerun_inv_c.js` was executed to run a complete, uninterrupted 10-run batch on `cloudco/inv-c-no-total.md`.
+- **Target Contract**: `0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997` (`ProbeExtract.py`)
+- **Prompt SHA-256**: `990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb` (identical across both initial batch and rerun; zero prompt modifications were made)
+- **Initial Batch Run 9 Failure Reason**: Studionet RPC gateway HTTP 502 / socket reset error during consensus wait.
+- **Standalone Rerun Batch (`inv_c_rerun.json`)**: 10/10 valid JSON parses, 10/10 expected hits (`amount == 0`), latencies 8.48s - 32.29s.
+Under Part 1 Rule 9 of the build rules, an undisclosed rerun of a target counts as an iteration. Therefore, this rerun is formally classified as **Iteration 1 (Operational/RPC resilience rerun, zero prompt modifications)**.
