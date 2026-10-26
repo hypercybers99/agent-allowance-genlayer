@@ -1,11 +1,11 @@
 # Agent Allowance
 
-> Intelligent spending account for autonomous AI agents with validator-verified invoice evidence on GenLayer Studionet (Status: Preview).
+> Intelligent spending account for AI agents with validator-verified invoice evidence on GenLayer Studionet (Status: Preview).
 
 MIT License Copyright (c) 2026 Hyper (huzyow155).
 
 ## Problem
-Autonomous AI agents that can pay require deterministic budgetary limits. However, limits alone cannot prevent:
+AI agents that can pay require deterministic budgetary limits. However, limits alone cannot prevent:
 1. An agent paying an incorrect or inflated amount compared to the vendor's actual invoice.
 2. An agent paying a vendor based on a completely different payee's invoice.
 3. An agent being persuaded to issue payments via prompt injection embedded within an invoice page.

@@ -1,7 +1,7 @@
 # Prior Art Analysis
 
 ## Overview
-Autonomous AI agents interacting with web services and economic systems require spending boundaries. Several existing architectures attempt to enforce restrictions on agent or automated expenditures:
+AI agents interacting with web services and economic systems require spending boundaries. Several existing architectures attempt to enforce restrictions on agent or automated expenditures:
 
 1. **Safe (Gnosis Safe) Allowance Module**:
    - An on-chain smart contract module allowing designated delegate keys to withdraw up to an allowance amount of specific ERC-20 tokens within a recurring timeframe.
@@ -39,4 +39,4 @@ The closest existing solution in production is the **Safe Allowance Module**, wh
 ## Honest Trade-Offs
 1. **Validator Latency**: Reading external web pages and running LLM extraction introduces a 20-30s consensus latency per judged spend, compared to sub-second EVM execution.
 2. **Deterministic Pre-Gates**: To optimize gas and validator execution, Agent Allowance executes deterministic pre-gates (cap, budget, category, prefix binding) with zero LLM/web latency.
-3. **Escalation vs Reversion**: Instead of failing outright on complex or ambiguous invoices, the `ASK_OWNER` workflow gives human principals oversight while maintaining autonomous execution for clear cases.
+3. **Escalation vs Reversion**: Instead of failing outright on complex or ambiguous invoices, the `ASK_OWNER` workflow gives human principals oversight while maintaining automated execution for clear cases.
