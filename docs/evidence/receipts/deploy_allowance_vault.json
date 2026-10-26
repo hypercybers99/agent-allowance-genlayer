@@ -1,0 +1,11 @@
+{
+  "label": "deploy_allowance_vault",
+  "contractAddress": "0xd89C4fCB63773C01e8494EebaE7375C4d5992E07",
+  "deployTxHash": "not recoverable from original execution logs",
+  "status_name": "ACTIVE_ON_CHAIN",
+  "sourceSha256": "ff656818cd98e7387794cce80dc0f0bb8da8b6a85e80a8deaa2e20087866b4ea",
+  "verifiedByteForByte": true,
+  "verificationMethod": "gen_getContractCode",
+  "explorer": "https://explorer-studio.genlayer.com/address/0xd89C4fCB63773C01e8494EebaE7375C4d5992E07",
+  "retrievedAt": "2026-10-26T04:00:41.718Z"
+}
