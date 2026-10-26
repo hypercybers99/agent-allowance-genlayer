@@ -1,0 +1,8 @@
+{
+  "case": "duplicate_observation",
+  "txHash": "0x9a98565fae936418e04b5737c309123eb60d5f4f5e9194a73bcf3e54ce8ec8f0",
+  "rawError": "",
+  "decodedError": "duplicate observation: 15",
+  "expectedError": "duplicate observation: 15",
+  "verifiedAt": "2026-10-26T04:12:21.254Z"
+}

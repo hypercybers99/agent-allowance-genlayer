@@ -1,0 +1,10 @@
+{
+  "case": "too_short_page",
+  "fixtureFile": "cloudco/inv-i-short.md",
+  "fixtureCommit": "1412ed737ea096b9e023726a1def18fc1a470806",
+  "txHash": "0x05e1da3ba0a537e9b0f30af1277464fbd5ca576a14e662537eb4877f906674fa",
+  "rawError": "",
+  "decodedError": "page unreadable (too little text; it may need JavaScript)",
+  "expectedError": "page unreadable (too little text; it may need JavaScript)",
+  "verifiedAt": "2026-10-26T04:12:05.822Z"
+}

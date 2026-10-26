@@ -1,0 +1,10 @@
+{
+  "description": "is_spend_valid_for returns false when amount is altered",
+  "spendId": "1",
+  "accountId": "1",
+  "payee": "0x6ecb277c73b68db5edbc6c79cd3b63d80d75376d",
+  "amount": 999,
+  "policyHash": "c26a3721cf849ba2c8202a91d4122b530bd5f1c21f5a36c87e0c0690c83c5538",
+  "result": false,
+  "verifiedAt": "2026-10-26T04:09:17.203Z"
+}

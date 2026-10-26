@@ -1,0 +1,8 @@
+{
+  "description": "Second serve refused with 'spend already served'",
+  "spendId": "15",
+  "txHash": "0xdbd32e14368f0d811a6ce93db55955b4280a3f3802e6a1d46559c4603312c36f",
+  "decodedError": "spend already served",
+  "rawError": "",
+  "verifiedAt": "2026-10-26T04:10:41.412Z"
+}

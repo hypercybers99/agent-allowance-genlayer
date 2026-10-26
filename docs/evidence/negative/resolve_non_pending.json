@@ -1,0 +1,11 @@
+{
+  "case": "resolve_non_pending_spend",
+  "spendId": "16",
+  "accountId": "4",
+  "owner": "0x6cd39E28793f7EF386f35c1081d11fb757FCD94B",
+  "txHash": "0x07c6fd37569ea65b1164af221111cbd3e0cbf48db1ce6843ea3f8510bd8139a5",
+  "rawError": "",
+  "decodedError": "spend not pending",
+  "expectedError": "spend not pending",
+  "verifiedAt": "2026-10-26T04:15:14.211Z"
+}

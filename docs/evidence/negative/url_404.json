@@ -1,0 +1,8 @@
+{
+  "case": "evidence_url_404",
+  "txHash": "0xeccecdca79617b1e403323602505cbb4f6b29fab0a77b9065850a078a77b1ac8",
+  "rawError": "",
+  "decodedError": "HTTP status not 200: 404",
+  "expectedError": "HTTP status not 200: 404",
+  "verifiedAt": "2026-10-26T04:11:10.215Z"
+}

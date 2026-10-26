@@ -1,0 +1,9 @@
+{
+  "description": "serve refused for a DENIED spend",
+  "target": "SpendGate.serve",
+  "spendId": "3",
+  "txHash": "0x4921d5381bb5696312145f59ec492f6b9dd3a726e5fffed38163adff7c61cc5e",
+  "decodedError": "spend not valid for these parameters",
+  "rawError": "",
+  "verifiedAt": "2026-10-26T04:09:33.007Z"
+}

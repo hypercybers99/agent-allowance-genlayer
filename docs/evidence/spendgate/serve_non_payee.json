@@ -1,0 +1,10 @@
+{
+  "description": "serve refused when sender != payee",
+  "target": "SpendGate.serve",
+  "sender": "0x4d696d14cD25E8aD69BE1eeAe8382BBBf105D3bb",
+  "expectedPayee": "0x6ecb277c73b68db5edbc6c79cd3b63d80d75376d",
+  "txHash": "0x551e5e146c539924daf3d2d23020d9a1337e6553b7aa3e2fdf391aae9662ed41",
+  "decodedError": "sender must equal payee",
+  "rawError": "",
+  "verifiedAt": "2026-10-26T04:09:24.216Z"
+}

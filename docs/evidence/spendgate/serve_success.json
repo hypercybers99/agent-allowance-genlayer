@@ -1,0 +1,23 @@
+{
+  "description": "SpendGate.serve() executed by registered payee",
+  "spendId": "15",
+  "accountId": "3",
+  "payee": "0xf6b95e6c8913df24fB50869b3dff8aD19D1FD363",
+  "amount": 120,
+  "policyHash": "7e858a2703aa15b7ea95ded7ba299d5fe361228cd719812beb58ed79c814c060",
+  "txHash": "0xd245b4482b4e9f7554c71ce8e774255c4e67500a08b6a22248890d91840c4371",
+  "latency": "5.25",
+  "status_name": "ACCEPTED",
+  "receiptRulePassed": true,
+  "serviceRecord": {
+    "account_id": "3",
+    "amount": "120",
+    "payee": "0xf6b95e6c8913df24fb50869b3dff8ad19d1fd363",
+    "policy_hash": "7e858a2703aa15b7ea95ded7ba299d5fe361228cd719812beb58ed79c814c060",
+    "schema_version": "1",
+    "served_by": "0xf6b95e6c8913df24fb50869b3dff8ad19d1fd363",
+    "spend_id": "15",
+    "status": "SERVED"
+  },
+  "verifiedAt": "2026-10-26T04:10:32.628Z"
+}

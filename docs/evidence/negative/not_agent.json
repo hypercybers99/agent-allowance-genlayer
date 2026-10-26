@@ -1,0 +1,8 @@
+{
+  "case": "not_a_registered_agent",
+  "txHash": "0x69d80d5872d9f148c749fb4e59b097f1e242eb5582aeb22541263acf093ee615",
+  "rawError": "",
+  "decodedError": "not a registered agent",
+  "expectedError": "not a registered agent",
+  "verifiedAt": "2026-10-26T04:12:26.644Z"
+}

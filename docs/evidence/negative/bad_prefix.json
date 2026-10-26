@@ -1,0 +1,34 @@
+[
+  {
+    "variant": "no_trailing_slash",
+    "prefix": "https://raw.githubusercontent.com/test",
+    "expectedError": "bad prefix: trailing slash",
+    "txHash": "0xc48255144d5adff8b42d5700f8b12b15922d2ef14482233bb83cebcfa4d6e8d7",
+    "rawError": "",
+    "decodedError": "bad prefix: trailing slash"
+  },
+  {
+    "variant": "userinfo",
+    "prefix": "https://user:pass@raw.githubusercontent.com/test/",
+    "expectedError": "bad prefix: userinfo",
+    "txHash": "0xdad4cd8bc49366819cf8d7a729c3bd630d4efc44f0bb56b55effbafee2db5977",
+    "rawError": "",
+    "decodedError": "bad prefix: userinfo"
+  },
+  {
+    "variant": "query",
+    "prefix": "https://raw.githubusercontent.com/test/?query=1/",
+    "expectedError": "bad prefix: query",
+    "txHash": "0x7920b0470e463f9013fca0bba287b26d5df38dbef6589a47f7704a22bd371217",
+    "rawError": "",
+    "decodedError": "bad prefix: query"
+  },
+  {
+    "variant": "bad_scheme",
+    "prefix": "http://raw.githubusercontent.com/test/",
+    "expectedError": "bad prefix: scheme",
+    "txHash": "0x042c2cc8f52ea4e96fa574d0982d1898bbf49024442443159e2fe76971f65624",
+    "rawError": "",
+    "decodedError": "bad prefix: scheme"
+  }
+]

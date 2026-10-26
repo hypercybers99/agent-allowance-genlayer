@@ -1,0 +1,8 @@
+{
+  "case": "closed_account",
+  "txHash": "0x6ba0aa046dab8f7018f0a2ebf7c194a9e3269a16109c33c70035666fca635b68",
+  "rawError": "",
+  "decodedError": "account closed",
+  "expectedError": "account closed",
+  "verifiedAt": "2026-10-26T04:12:40.741Z"
+}

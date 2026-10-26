@@ -1,0 +1,9 @@
+{
+  "case": "funding_exceeds_budget",
+  "accountId": "4",
+  "txHash": "0x8b56459456687faeed71bfbb0fc4a88142c1a13db400d3467d8b9d15cdf6bdb4",
+  "rawError": "",
+  "decodedError": "funding exceeds the budget rule",
+  "expectedError": "funding exceeds the budget rule",
+  "verifiedAt": "2026-10-26T04:13:04.627Z"
+}
