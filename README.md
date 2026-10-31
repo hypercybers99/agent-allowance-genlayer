@@ -2,7 +2,7 @@
 
 > Intelligent spending account for AI agents with validator-verified invoice evidence on GenLayer Studionet (Status: Preview).
 
-MIT License Copyright (c) 2026 Hyper (huzyow155).
+MIT License Copyright (c) 2026 Hyper (hypercybers99).
 
 ## Problem
 AI agents that can pay require deterministic budgetary limits. However, limits alone cannot prevent:

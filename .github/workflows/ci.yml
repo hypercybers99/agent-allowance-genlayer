@@ -1,0 +1,45 @@
+name: CI Quality Assurance
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  quality-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Unit & Fuzz Tests (18 tests, 10k cases)
+        run: python -m unittest discover tests
+
+      - name: Run 21-Branch Decision Logic Parity Verification
+        run: python scripts/test_decide_parity.py
+
+      - name: Run ASCII Character Check
+        run: python scripts/scan_ascii.py
+
+      - name: Run Banned Words Compliance Scan
+        run: python scripts/scan_banned_words.py
+
+      - name: Run Secret Leakage Scan
+        run: python scripts/scan_secrets.py
+
+      - name: Verify Documentation File Paths
+        run: node scripts/check_doc_paths.mjs

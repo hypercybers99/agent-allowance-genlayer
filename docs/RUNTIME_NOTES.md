@@ -39,10 +39,10 @@ This document records the empirical results and verified runtime behavior of Gen
 
 ### Web Fetching (`gl.nondet.web.get`)
 1. **Commit-Pinned Raw Markdown Fixture**:
-   - URL: `https://raw.githubusercontent.com/huzyow155/agent-allowance-fixtures/17d05116617effeaa127249914f3b4e691ecad40/cloudco/inv-a-120.md`
+   - URL: `https://raw.githubusercontent.com/hypercybers99/agent-allowance-fixtures/17d05116617effeaa127249914f3b4e691ecad40/cloudco/inv-a-120.md` (canonical owner `hypercybers99`, redirected from `huzyow155`)
    - Result: Status 200, length 670 bytes, sha256 `75a5f45576ea6f2de80632c1ba960b738f05b77b652322cadcabbb1cbbaba48a`, latency 11.84s.
 2. **Commit-Pinned Raw HTML Fixture**:
-   - URL: `https://raw.githubusercontent.com/huzyow155/agent-allowance-fixtures/17d05116617effeaa127249914f3b4e691ecad40/cloudco/inv-a-120.html`
+   - URL: `https://raw.githubusercontent.com/hypercybers99/agent-allowance-fixtures/17d05116617effeaa127249914f3b4e691ecad40/cloudco/inv-a-120.html`
    - Result: Status 200, length 1246 bytes, sha256 `5d514ca2e0f69bf95ab9a321a0002ba285a95fa959b6077133e1a27f5b412eae`, latency 5.33s.
 3. **404 Not Found Handling**:
    - URL: `.../cloudco/nonexistent-file.md`
