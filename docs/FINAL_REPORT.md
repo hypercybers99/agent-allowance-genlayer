@@ -94,9 +94,9 @@ STATUS: READY
 =================================================
 CHECK DOCUMENTATION FILE PATHS (scripts/check_doc_paths.mjs)
 =================================================
-Scanned 12 markdown documentation files.
+Scanned 13 markdown documentation files.
 
-Total Path References Checked: 27
+Total Path References Checked: 36
 PASSED: All referenced documentation paths exist on disk!
 ```
 
