@@ -1,21 +1,36 @@
 {
   "target": "cloudco/inv-a-120.md",
+  "slug": "inv_a_120_md",
   "runIndex": 2,
-  "resultKey": "inv-a-120.md_2",
+  "resultKey": "rb_inv_a_120_md_2",
   "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
   "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
-  "inputText": "Fixture content pinned on GitHub",
-  "rawModelOutput": "```json\n{\"category\": \"CLOUD\", \"amount\": 120, \"currency\": \"USD\", \"quote\": \"Total due: 120 USD\"}\n```",
-  "parsedObject": {
+  "inputUrl": "https://raw.githubusercontent.com/huzyow155/agent-allowance-fixtures/17d05116617effeaa127249914f3b4e691ecad40/cloudco/inv-a-120.md",
+  "txHash": "0x947f20d6c65fb526d7b751e532cea36b647e6a1d7bab6a54d951e3757e0435ea",
+  "receiptTriple": {
+    "status_name": "ACCEPTED",
+    "result_name": "MAJORITY_AGREE",
+    "leader_execution_result": "SUCCESS"
+  },
+  "status_name": "ACCEPTED",
+  "result_name": "MAJORITY_AGREE",
+  "leader_execution_result": "SUCCESS",
+  "latency": 13.43,
+  "timestamp": "2026-10-31T08:44:42.135Z",
+  "rawModelOutput": "{\"category\": \"CLOUD\", \"amount\": 120, \"currency\": \"USD\", \"quote\": \"Total due: 120 USD\"}",
+  "parsed_valid": true,
+  "parsedFields": {
     "valid": true,
     "category": "CLOUD",
     "amount": 120,
     "currency": "USD",
     "quote": "Total due: 120 USD"
   },
-  "isParseValid": true,
-  "isExpectedHit": true,
-  "pass": true,
-  "txHash": "on-chain execution (contract state query)",
-  "verifiedAt": "2026-10-26T04:19:24.847Z"
+  "expectedFields": {
+    "amount": 120,
+    "category": "CLOUD",
+    "currency": "USD"
+  },
+  "match": true,
+  "pass": true
 }

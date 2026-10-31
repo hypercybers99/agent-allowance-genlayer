@@ -1,0 +1,221 @@
+{
+  "target": "datashop/inv-f-eur.md",
+  "slug": "inv_f_eur_md",
+  "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
+  "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
+  "parseSuccesses": "10/10",
+  "expectedHits": "10/10",
+  "passed": true,
+  "runs": [
+    {
+      "target": "datashop/inv-f-eur.md",
+      "runIndex": 1,
+      "resultKey": "inv-f-eur.md_1",
+      "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
+      "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
+      "inputText": "Fixture content pinned on GitHub",
+      "rawModelOutput": "{\"category\":\"DATA\",\"amount\":90,\"currency\":\"EUR\",\"quote\":\"Total due: 90 EUR\"}",
+      "parsedObject": {
+        "valid": true,
+        "category": "DATA",
+        "amount": 90,
+        "currency": "EUR",
+        "quote": "Total due: 90 EUR"
+      },
+      "isParseValid": true,
+      "isExpectedHit": true,
+      "pass": true,
+      "txHash": "on-chain execution (contract state query)",
+      "verifiedAt": "2026-10-26T04:21:07.334Z"
+    },
+    {
+      "target": "datashop/inv-f-eur.md",
+      "runIndex": 2,
+      "resultKey": "inv-f-eur.md_2",
+      "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
+      "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
+      "inputText": "Fixture content pinned on GitHub",
+      "rawModelOutput": "```json\n{\"category\": \"DATA\", \"amount\": 90, \"currency\": \"EUR\", \"quote\": \"Total due: 90 EUR\"}\n```",
+      "parsedObject": {
+        "valid": true,
+        "category": "DATA",
+        "amount": 90,
+        "currency": "EUR",
+        "quote": "Total due: 90 EUR"
+      },
+      "isParseValid": true,
+      "isExpectedHit": true,
+      "pass": true,
+      "txHash": "on-chain execution (contract state query)",
+      "verifiedAt": "2026-10-26T04:21:10.866Z"
+    },
+    {
+      "target": "datashop/inv-f-eur.md",
+      "runIndex": 3,
+      "resultKey": "inv-f-eur.md_3",
+      "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
+      "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
+      "inputText": "Fixture content pinned on GitHub",
+      "rawModelOutput": "{\"category\":\"DATA\",\"amount\":90,\"currency\":\"EUR\",\"quote\":\"Total due: 90 EUR\"}",
+      "parsedObject": {
+        "valid": true,
+        "category": "DATA",
+        "amount": 90,
+        "currency": "EUR",
+        "quote": "Total due: 90 EUR"
+      },
+      "isParseValid": true,
+      "isExpectedHit": true,
+      "pass": true,
+      "txHash": "on-chain execution (contract state query)",
+      "verifiedAt": "2026-10-26T04:21:14.371Z"
+    },
+    {
+      "target": "datashop/inv-f-eur.md",
+      "runIndex": 4,
+      "resultKey": "inv-f-eur.md_4",
+      "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
+      "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
+      "inputText": "Fixture content pinned on GitHub",
+      "rawModelOutput": "{\"category\": \"DATA\", \"amount\": 90, \"currency\": \"EUR\", \"quote\": \"Total due: 90 EUR\"}",
+      "parsedObject": {
+        "valid": true,
+        "category": "DATA",
+        "amount": 90,
+        "currency": "EUR",
+        "quote": "Total due: 90 EUR"
+      },
+      "isParseValid": true,
+      "isExpectedHit": true,
+      "pass": true,
+      "txHash": "on-chain execution (contract state query)",
+      "verifiedAt": "2026-10-26T04:21:18.587Z"
+    },
+    {
+      "target": "datashop/inv-f-eur.md",
+      "runIndex": 5,
+      "resultKey": "inv-f-eur.md_5",
+      "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
+      "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
+      "inputText": "Fixture content pinned on GitHub",
+      "rawModelOutput": "```json\n{\"category\": \"DATA\", \"amount\": 90, \"currency\": \"EUR\", \"quote\": \"Total due: 90 EUR\"}\n```",
+      "parsedObject": {
+        "valid": true,
+        "category": "DATA",
+        "amount": 90,
+        "currency": "EUR",
+        "quote": "Total due: 90 EUR"
+      },
+      "isParseValid": true,
+      "isExpectedHit": true,
+      "pass": true,
+      "txHash": "on-chain execution (contract state query)",
+      "verifiedAt": "2026-10-26T04:21:22.094Z"
+    },
+    {
+      "target": "datashop/inv-f-eur.md",
+      "runIndex": 6,
+      "resultKey": "inv-f-eur.md_6",
+      "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
+      "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
+      "inputText": "Fixture content pinned on GitHub",
+      "rawModelOutput": "{\"category\":\"DATA\",\"amount\":90,\"currency\":\"EUR\",\"quote\":\"Total due: 90 EUR\"}",
+      "parsedObject": {
+        "valid": true,
+        "category": "DATA",
+        "amount": 90,
+        "currency": "EUR",
+        "quote": "Total due: 90 EUR"
+      },
+      "isParseValid": true,
+      "isExpectedHit": true,
+      "pass": true,
+      "txHash": "on-chain execution (contract state query)",
+      "verifiedAt": "2026-10-26T04:21:25.593Z"
+    },
+    {
+      "target": "datashop/inv-f-eur.md",
+      "runIndex": 7,
+      "resultKey": "inv-f-eur.md_7",
+      "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
+      "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
+      "inputText": "Fixture content pinned on GitHub",
+      "rawModelOutput": "{\"category\":\"DATA\",\"amount\":90,\"currency\":\"EUR\",\"quote\":\"Total due: 90 EUR\"}",
+      "parsedObject": {
+        "valid": true,
+        "category": "DATA",
+        "amount": 90,
+        "currency": "EUR",
+        "quote": "Total due: 90 EUR"
+      },
+      "isParseValid": true,
+      "isExpectedHit": true,
+      "pass": true,
+      "txHash": "on-chain execution (contract state query)",
+      "verifiedAt": "2026-10-26T04:21:29.114Z"
+    },
+    {
+      "target": "datashop/inv-f-eur.md",
+      "runIndex": 8,
+      "resultKey": "inv-f-eur.md_8",
+      "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
+      "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
+      "inputText": "Fixture content pinned on GitHub",
+      "rawModelOutput": "{\"category\":\"DATA\",\"amount\":90,\"currency\":\"EUR\",\"quote\":\"Total due: 90 EUR\"}",
+      "parsedObject": {
+        "valid": true,
+        "category": "DATA",
+        "amount": 90,
+        "currency": "EUR",
+        "quote": "Total due: 90 EUR"
+      },
+      "isParseValid": true,
+      "isExpectedHit": true,
+      "pass": true,
+      "txHash": "on-chain execution (contract state query)",
+      "verifiedAt": "2026-10-26T04:21:32.635Z"
+    },
+    {
+      "target": "datashop/inv-f-eur.md",
+      "runIndex": 9,
+      "resultKey": "inv-f-eur.md_9",
+      "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
+      "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
+      "inputText": "Fixture content pinned on GitHub",
+      "rawModelOutput": "{\"category\":\"DATA\",\"amount\":90,\"currency\":\"EUR\",\"quote\":\"Total due: 90 EUR\"}",
+      "parsedObject": {
+        "valid": true,
+        "category": "DATA",
+        "amount": 90,
+        "currency": "EUR",
+        "quote": "Total due: 90 EUR"
+      },
+      "isParseValid": true,
+      "isExpectedHit": true,
+      "pass": true,
+      "txHash": "on-chain execution (contract state query)",
+      "verifiedAt": "2026-10-26T04:21:36.137Z"
+    },
+    {
+      "target": "datashop/inv-f-eur.md",
+      "runIndex": 10,
+      "resultKey": "inv-f-eur.md_10",
+      "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
+      "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
+      "inputText": "Fixture content pinned on GitHub",
+      "rawModelOutput": "```json\n{\"category\": \"DATA\", \"amount\": 90, \"currency\": \"EUR\", \"quote\": \"Total due: 90 EUR\"}\n```",
+      "parsedObject": {
+        "valid": true,
+        "category": "DATA",
+        "amount": 90,
+        "currency": "EUR",
+        "quote": "Total due: 90 EUR"
+      },
+      "isParseValid": true,
+      "isExpectedHit": true,
+      "pass": true,
+      "txHash": "on-chain execution (contract state query)",
+      "verifiedAt": "2026-10-26T04:21:39.663Z"
+    }
+  ]
+}

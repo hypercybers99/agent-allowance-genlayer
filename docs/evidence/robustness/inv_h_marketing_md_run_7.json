@@ -1,21 +1,36 @@
 {
   "target": "cloudco/inv-h-marketing.md",
+  "slug": "inv_h_marketing_md",
   "runIndex": 7,
-  "resultKey": "inv-h-marketing.md_7",
+  "resultKey": "rb_inv_h_marketing_md_7",
   "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
   "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
-  "inputText": "Fixture content pinned on GitHub",
-  "rawModelOutput": "{\"category\": \"MARKETING\", \"amount\": 60, \"currency\": \"USD\", \"quote\": \"Total due: 60 USD\"}",
-  "parsedObject": {
+  "inputUrl": "https://raw.githubusercontent.com/huzyow155/agent-allowance-fixtures/17d05116617effeaa127249914f3b4e691ecad40/cloudco/inv-h-marketing.md",
+  "txHash": "0xb983337b5f502bf0a4f8134a2eaa63c0ed0bd5e3408c484396be0f178e9cb35b",
+  "receiptTriple": {
+    "status_name": "ACCEPTED",
+    "result_name": "MAJORITY_AGREE",
+    "leader_execution_result": "SUCCESS"
+  },
+  "status_name": "ACCEPTED",
+  "result_name": "MAJORITY_AGREE",
+  "leader_execution_result": "SUCCESS",
+  "latency": 13.51,
+  "timestamp": "2026-10-31T09:09:14.462Z",
+  "rawModelOutput": "{\"category\":\"MARKETING\",\"amount\":60,\"currency\":\"USD\",\"quote\":\"Total due: 60 USD\"}",
+  "parsed_valid": true,
+  "parsedFields": {
     "valid": true,
     "category": "MARKETING",
     "amount": 60,
     "currency": "USD",
     "quote": "Total due: 60 USD"
   },
-  "isParseValid": true,
-  "isExpectedHit": true,
-  "pass": true,
-  "txHash": "on-chain execution (contract state query)",
-  "verifiedAt": "2026-10-26T04:22:04.388Z"
+  "expectedFields": {
+    "amount": 60,
+    "category": "MARKETING",
+    "currency": "USD"
+  },
+  "match": true,
+  "pass": true
 }

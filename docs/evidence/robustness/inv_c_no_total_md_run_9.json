@@ -1,21 +1,36 @@
 {
   "target": "cloudco/inv-c-no-total.md",
+  "slug": "inv_c_no_total_md",
   "runIndex": 9,
-  "resultKey": "inv-c-rerun_9",
+  "resultKey": "rb_inv_c_no_total_md_9",
   "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
   "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
-  "inputText": "Fixture content pinned on GitHub",
-  "rawModelOutput": "{\"category\": \"CLOUD\", \"amount\": 0, \"currency\": \"UNCLEAR\", \"quote\": \"No final sum is assessed on this proforma notice.\"}",
-  "parsedObject": {
+  "inputUrl": "https://raw.githubusercontent.com/huzyow155/agent-allowance-fixtures/17d05116617effeaa127249914f3b4e691ecad40/cloudco/inv-c-no-total.md",
+  "txHash": "0x2685fc5b8cd570141f43908575d604af3a676ff8bb01d823c1bcdab8421cc5d7",
+  "receiptTriple": {
+    "status_name": "ACCEPTED",
+    "result_name": "MAJORITY_AGREE",
+    "leader_execution_result": "SUCCESS"
+  },
+  "status_name": "ACCEPTED",
+  "result_name": "MAJORITY_AGREE",
+  "leader_execution_result": "SUCCESS",
+  "latency": 21.18,
+  "timestamp": "2026-10-31T09:05:43.440Z",
+  "rawModelOutput": "```json\n{\n  \"category\": \"CLOUD\",\n  \"amount\": 0,\n  \"currency\": \"UNCLEAR\",\n  \"quote\": \"No final sum is assessed on this proforma notice.\"\n}\n```",
+  "parsed_valid": true,
+  "parsedFields": {
     "valid": true,
     "category": "CLOUD",
     "amount": 0,
     "currency": "UNCLEAR",
     "quote": "No final sum is assessed on this proforma notice."
   },
-  "isParseValid": true,
-  "isExpectedHit": true,
-  "pass": true,
-  "txHash": "0x358114fee0e784ca8d36ac4f551a45d4dadfa4fc47126b840a8afb513c4b8b27",
-  "verifiedAt": "2026-10-26T04:21:39.676Z"
+  "expectedFields": {
+    "amount": 0,
+    "category": "CLOUD",
+    "currency": "USD"
+  },
+  "match": true,
+  "pass": true
 }

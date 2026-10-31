@@ -1,221 +1,370 @@
 {
   "target": "datashop/inv-f-eur.md",
   "slug": "inv_f_eur_md",
-  "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
-  "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
+  "totalRuns": 10,
   "parseSuccesses": "10/10",
   "expectedHits": "10/10",
   "passed": true,
   "runs": [
     {
       "target": "datashop/inv-f-eur.md",
+      "slug": "inv_f_eur_md",
       "runIndex": 1,
-      "resultKey": "inv-f-eur.md_1",
+      "resultKey": "rb_inv_f_eur_md_1",
       "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
       "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
-      "inputText": "Fixture content pinned on GitHub",
-      "rawModelOutput": "{\"category\":\"DATA\",\"amount\":90,\"currency\":\"EUR\",\"quote\":\"Total due: 90 EUR\"}",
-      "parsedObject": {
+      "inputUrl": "https://raw.githubusercontent.com/huzyow155/agent-allowance-fixtures/17d05116617effeaa127249914f3b4e691ecad40/datashop/inv-f-eur.md",
+      "txHash": "0x86d6db970ae9a6afe45dea2e6283344b986f8f24034b2c57d83b93f9e2f91ef9",
+      "receiptTriple": {
+        "status_name": "ACCEPTED",
+        "result_name": "MAJORITY_AGREE",
+        "leader_execution_result": "SUCCESS"
+      },
+      "status_name": "ACCEPTED",
+      "result_name": "MAJORITY_AGREE",
+      "leader_execution_result": "SUCCESS",
+      "latency": 17.16,
+      "timestamp": "2026-10-31T08:57:49.490Z",
+      "rawModelOutput": " {\"category\": \"DATA\", \"amount\": 90, \"currency\": \"EUR\", \"quote\": \"Total due: 90 EUR\"}",
+      "parsed_valid": true,
+      "parsedFields": {
         "valid": true,
         "category": "DATA",
         "amount": 90,
         "currency": "EUR",
         "quote": "Total due: 90 EUR"
       },
-      "isParseValid": true,
-      "isExpectedHit": true,
-      "pass": true,
-      "txHash": "on-chain execution (contract state query)",
-      "verifiedAt": "2026-10-26T04:21:07.334Z"
+      "expectedFields": {
+        "amount": 90,
+        "category": "DATA",
+        "currency": "EUR"
+      },
+      "match": true,
+      "pass": true
     },
     {
       "target": "datashop/inv-f-eur.md",
+      "slug": "inv_f_eur_md",
       "runIndex": 2,
-      "resultKey": "inv-f-eur.md_2",
+      "resultKey": "rb_inv_f_eur_md_2",
       "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
       "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
-      "inputText": "Fixture content pinned on GitHub",
-      "rawModelOutput": "```json\n{\"category\": \"DATA\", \"amount\": 90, \"currency\": \"EUR\", \"quote\": \"Total due: 90 EUR\"}\n```",
-      "parsedObject": {
-        "valid": true,
-        "category": "DATA",
-        "amount": 90,
-        "currency": "EUR",
-        "quote": "Total due: 90 EUR"
+      "inputUrl": "https://raw.githubusercontent.com/huzyow155/agent-allowance-fixtures/17d05116617effeaa127249914f3b4e691ecad40/datashop/inv-f-eur.md",
+      "txHash": "0xc63a64a04ccd0a761df5fd0dda121e4760e1960299bec0796110859402c965b1",
+      "receiptTriple": {
+        "status_name": "ACCEPTED",
+        "result_name": "MAJORITY_AGREE",
+        "leader_execution_result": "SUCCESS"
       },
-      "isParseValid": true,
-      "isExpectedHit": true,
-      "pass": true,
-      "txHash": "on-chain execution (contract state query)",
-      "verifiedAt": "2026-10-26T04:21:10.866Z"
-    },
-    {
-      "target": "datashop/inv-f-eur.md",
-      "runIndex": 3,
-      "resultKey": "inv-f-eur.md_3",
-      "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
-      "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
-      "inputText": "Fixture content pinned on GitHub",
-      "rawModelOutput": "{\"category\":\"DATA\",\"amount\":90,\"currency\":\"EUR\",\"quote\":\"Total due: 90 EUR\"}",
-      "parsedObject": {
-        "valid": true,
-        "category": "DATA",
-        "amount": 90,
-        "currency": "EUR",
-        "quote": "Total due: 90 EUR"
-      },
-      "isParseValid": true,
-      "isExpectedHit": true,
-      "pass": true,
-      "txHash": "on-chain execution (contract state query)",
-      "verifiedAt": "2026-10-26T04:21:14.371Z"
-    },
-    {
-      "target": "datashop/inv-f-eur.md",
-      "runIndex": 4,
-      "resultKey": "inv-f-eur.md_4",
-      "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
-      "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
-      "inputText": "Fixture content pinned on GitHub",
+      "status_name": "ACCEPTED",
+      "result_name": "MAJORITY_AGREE",
+      "leader_execution_result": "SUCCESS",
+      "latency": 13.27,
+      "timestamp": "2026-10-31T08:58:14.075Z",
       "rawModelOutput": "{\"category\": \"DATA\", \"amount\": 90, \"currency\": \"EUR\", \"quote\": \"Total due: 90 EUR\"}",
-      "parsedObject": {
+      "parsed_valid": true,
+      "parsedFields": {
         "valid": true,
         "category": "DATA",
         "amount": 90,
         "currency": "EUR",
         "quote": "Total due: 90 EUR"
       },
-      "isParseValid": true,
-      "isExpectedHit": true,
-      "pass": true,
-      "txHash": "on-chain execution (contract state query)",
-      "verifiedAt": "2026-10-26T04:21:18.587Z"
+      "expectedFields": {
+        "amount": 90,
+        "category": "DATA",
+        "currency": "EUR"
+      },
+      "match": true,
+      "pass": true
     },
     {
       "target": "datashop/inv-f-eur.md",
+      "slug": "inv_f_eur_md",
+      "runIndex": 3,
+      "resultKey": "rb_inv_f_eur_md_3",
+      "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
+      "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
+      "inputUrl": "https://raw.githubusercontent.com/huzyow155/agent-allowance-fixtures/17d05116617effeaa127249914f3b4e691ecad40/datashop/inv-f-eur.md",
+      "txHash": "0x4f3b5186291b67a1ec0366e75e7e84266c45e3a0785f9d72c7909ffe0cfbe06b",
+      "receiptTriple": {
+        "status_name": "ACCEPTED",
+        "result_name": "MAJORITY_AGREE",
+        "leader_execution_result": "SUCCESS"
+      },
+      "status_name": "ACCEPTED",
+      "result_name": "MAJORITY_AGREE",
+      "leader_execution_result": "SUCCESS",
+      "latency": 13.54,
+      "timestamp": "2026-10-31T08:58:38.950Z",
+      "rawModelOutput": "{\"category\":\"DATA\",\"amount\":90,\"currency\":\"EUR\",\"quote\":\"Total due: 90 EUR\"}",
+      "parsed_valid": true,
+      "parsedFields": {
+        "valid": true,
+        "category": "DATA",
+        "amount": 90,
+        "currency": "EUR",
+        "quote": "Total due: 90 EUR"
+      },
+      "expectedFields": {
+        "amount": 90,
+        "category": "DATA",
+        "currency": "EUR"
+      },
+      "match": true,
+      "pass": true
+    },
+    {
+      "target": "datashop/inv-f-eur.md",
+      "slug": "inv_f_eur_md",
+      "runIndex": 4,
+      "resultKey": "rb_inv_f_eur_md_4",
+      "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
+      "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
+      "inputUrl": "https://raw.githubusercontent.com/huzyow155/agent-allowance-fixtures/17d05116617effeaa127249914f3b4e691ecad40/datashop/inv-f-eur.md",
+      "txHash": "0x78e7c03c074dfa3a9ed7522a6b119720b0e9e09f97c333d6e0360f6f41b2dbc4",
+      "receiptTriple": {
+        "status_name": "ACCEPTED",
+        "result_name": "MAJORITY_AGREE",
+        "leader_execution_result": "SUCCESS"
+      },
+      "status_name": "ACCEPTED",
+      "result_name": "MAJORITY_AGREE",
+      "leader_execution_result": "SUCCESS",
+      "latency": 13.45,
+      "timestamp": "2026-10-31T08:59:03.752Z",
+      "rawModelOutput": "{\"category\": \"DATA\", \"amount\": 90, \"currency\": \"EUR\", \"quote\": \"Total due: 90 EUR\"}",
+      "parsed_valid": true,
+      "parsedFields": {
+        "valid": true,
+        "category": "DATA",
+        "amount": 90,
+        "currency": "EUR",
+        "quote": "Total due: 90 EUR"
+      },
+      "expectedFields": {
+        "amount": 90,
+        "category": "DATA",
+        "currency": "EUR"
+      },
+      "match": true,
+      "pass": true
+    },
+    {
+      "target": "datashop/inv-f-eur.md",
+      "slug": "inv_f_eur_md",
       "runIndex": 5,
-      "resultKey": "inv-f-eur.md_5",
+      "resultKey": "rb_inv_f_eur_md_5",
       "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
       "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
-      "inputText": "Fixture content pinned on GitHub",
-      "rawModelOutput": "```json\n{\"category\": \"DATA\", \"amount\": 90, \"currency\": \"EUR\", \"quote\": \"Total due: 90 EUR\"}\n```",
-      "parsedObject": {
+      "inputUrl": "https://raw.githubusercontent.com/huzyow155/agent-allowance-fixtures/17d05116617effeaa127249914f3b4e691ecad40/datashop/inv-f-eur.md",
+      "txHash": "0x369eeb589c249fb3e96e3dfa9a5e219890c0b46a1cdee8c27c11c1635052afc4",
+      "receiptTriple": {
+        "status_name": "ACCEPTED",
+        "result_name": "MAJORITY_AGREE",
+        "leader_execution_result": "SUCCESS"
+      },
+      "status_name": "ACCEPTED",
+      "result_name": "MAJORITY_AGREE",
+      "leader_execution_result": "SUCCESS",
+      "latency": 13.28,
+      "timestamp": "2026-10-31T08:59:28.330Z",
+      "rawModelOutput": "{\"category\": \"DATA\", \"amount\": 90, \"currency\": \"EUR\", \"quote\": \"Total due: 90 EUR\"}",
+      "parsed_valid": true,
+      "parsedFields": {
         "valid": true,
         "category": "DATA",
         "amount": 90,
         "currency": "EUR",
         "quote": "Total due: 90 EUR"
       },
-      "isParseValid": true,
-      "isExpectedHit": true,
-      "pass": true,
-      "txHash": "on-chain execution (contract state query)",
-      "verifiedAt": "2026-10-26T04:21:22.094Z"
+      "expectedFields": {
+        "amount": 90,
+        "category": "DATA",
+        "currency": "EUR"
+      },
+      "match": true,
+      "pass": true
     },
     {
       "target": "datashop/inv-f-eur.md",
+      "slug": "inv_f_eur_md",
       "runIndex": 6,
-      "resultKey": "inv-f-eur.md_6",
+      "resultKey": "rb_inv_f_eur_md_6",
       "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
       "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
-      "inputText": "Fixture content pinned on GitHub",
-      "rawModelOutput": "{\"category\":\"DATA\",\"amount\":90,\"currency\":\"EUR\",\"quote\":\"Total due: 90 EUR\"}",
-      "parsedObject": {
+      "inputUrl": "https://raw.githubusercontent.com/huzyow155/agent-allowance-fixtures/17d05116617effeaa127249914f3b4e691ecad40/datashop/inv-f-eur.md",
+      "txHash": "0x6b24a77294e1011a4b574d500ba4f737f93629525ed0f5189317d7578de0809c",
+      "receiptTriple": {
+        "status_name": "ACCEPTED",
+        "result_name": "MAJORITY_AGREE",
+        "leader_execution_result": "SUCCESS"
+      },
+      "status_name": "ACCEPTED",
+      "result_name": "MAJORITY_AGREE",
+      "leader_execution_result": "SUCCESS",
+      "latency": 9.68,
+      "timestamp": "2026-10-31T08:59:49.338Z",
+      "rawModelOutput": "{\"category\": \"DATA\", \"amount\": 90, \"currency\": \"EUR\", \"quote\": \"Total due: 90 EUR\"}",
+      "parsed_valid": true,
+      "parsedFields": {
         "valid": true,
         "category": "DATA",
         "amount": 90,
         "currency": "EUR",
         "quote": "Total due: 90 EUR"
       },
-      "isParseValid": true,
-      "isExpectedHit": true,
-      "pass": true,
-      "txHash": "on-chain execution (contract state query)",
-      "verifiedAt": "2026-10-26T04:21:25.593Z"
+      "expectedFields": {
+        "amount": 90,
+        "category": "DATA",
+        "currency": "EUR"
+      },
+      "match": true,
+      "pass": true
     },
     {
       "target": "datashop/inv-f-eur.md",
+      "slug": "inv_f_eur_md",
       "runIndex": 7,
-      "resultKey": "inv-f-eur.md_7",
+      "resultKey": "rb_inv_f_eur_md_7",
       "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
       "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
-      "inputText": "Fixture content pinned on GitHub",
-      "rawModelOutput": "{\"category\":\"DATA\",\"amount\":90,\"currency\":\"EUR\",\"quote\":\"Total due: 90 EUR\"}",
-      "parsedObject": {
+      "inputUrl": "https://raw.githubusercontent.com/huzyow155/agent-allowance-fixtures/17d05116617effeaa127249914f3b4e691ecad40/datashop/inv-f-eur.md",
+      "txHash": "0xa31d684a56223ae4b5009eac27958babc8b242e6db815cf05299e212515dceff",
+      "receiptTriple": {
+        "status_name": "ACCEPTED",
+        "result_name": "MAJORITY_AGREE",
+        "leader_execution_result": "SUCCESS"
+      },
+      "status_name": "ACCEPTED",
+      "result_name": "MAJORITY_AGREE",
+      "leader_execution_result": "SUCCESS",
+      "latency": 9.51,
+      "timestamp": "2026-10-31T09:00:10.234Z",
+      "rawModelOutput": "{\"category\": \"DATA\", \"amount\": 90, \"currency\": \"EUR\", \"quote\": \"Total due: 90 EUR\"}",
+      "parsed_valid": true,
+      "parsedFields": {
         "valid": true,
         "category": "DATA",
         "amount": 90,
         "currency": "EUR",
         "quote": "Total due: 90 EUR"
       },
-      "isParseValid": true,
-      "isExpectedHit": true,
-      "pass": true,
-      "txHash": "on-chain execution (contract state query)",
-      "verifiedAt": "2026-10-26T04:21:29.114Z"
+      "expectedFields": {
+        "amount": 90,
+        "category": "DATA",
+        "currency": "EUR"
+      },
+      "match": true,
+      "pass": true
     },
     {
       "target": "datashop/inv-f-eur.md",
+      "slug": "inv_f_eur_md",
       "runIndex": 8,
-      "resultKey": "inv-f-eur.md_8",
+      "resultKey": "rb_inv_f_eur_md_8",
       "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
       "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
-      "inputText": "Fixture content pinned on GitHub",
-      "rawModelOutput": "{\"category\":\"DATA\",\"amount\":90,\"currency\":\"EUR\",\"quote\":\"Total due: 90 EUR\"}",
-      "parsedObject": {
+      "inputUrl": "https://raw.githubusercontent.com/huzyow155/agent-allowance-fixtures/17d05116617effeaa127249914f3b4e691ecad40/datashop/inv-f-eur.md",
+      "txHash": "0x8c88ed82b2c32a5e25b1c54b89bd0200b9903941c815cc54449b5493fb433b9f",
+      "receiptTriple": {
+        "status_name": "ACCEPTED",
+        "result_name": "MAJORITY_AGREE",
+        "leader_execution_result": "SUCCESS"
+      },
+      "status_name": "ACCEPTED",
+      "result_name": "MAJORITY_AGREE",
+      "leader_execution_result": "SUCCESS",
+      "latency": 21.13,
+      "timestamp": "2026-10-31T09:00:42.692Z",
+      "rawModelOutput": "{\"category\": \"DATA\", \"amount\": 90, \"currency\": \"EUR\", \"quote\": \"Total due: 90 EUR\"}",
+      "parsed_valid": true,
+      "parsedFields": {
         "valid": true,
         "category": "DATA",
         "amount": 90,
         "currency": "EUR",
         "quote": "Total due: 90 EUR"
       },
-      "isParseValid": true,
-      "isExpectedHit": true,
-      "pass": true,
-      "txHash": "on-chain execution (contract state query)",
-      "verifiedAt": "2026-10-26T04:21:32.635Z"
+      "expectedFields": {
+        "amount": 90,
+        "category": "DATA",
+        "currency": "EUR"
+      },
+      "match": true,
+      "pass": true
     },
     {
       "target": "datashop/inv-f-eur.md",
+      "slug": "inv_f_eur_md",
       "runIndex": 9,
-      "resultKey": "inv-f-eur.md_9",
+      "resultKey": "rb_inv_f_eur_md_9",
       "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
       "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
-      "inputText": "Fixture content pinned on GitHub",
-      "rawModelOutput": "{\"category\":\"DATA\",\"amount\":90,\"currency\":\"EUR\",\"quote\":\"Total due: 90 EUR\"}",
-      "parsedObject": {
+      "inputUrl": "https://raw.githubusercontent.com/huzyow155/agent-allowance-fixtures/17d05116617effeaa127249914f3b4e691ecad40/datashop/inv-f-eur.md",
+      "txHash": "0xf1f727c7d12693c87dbe9fe8e552a574a44a16dd11f14ccfc1d4abb9fcc6a2c2",
+      "receiptTriple": {
+        "status_name": "ACCEPTED",
+        "result_name": "MAJORITY_AGREE",
+        "leader_execution_result": "SUCCESS"
+      },
+      "status_name": "ACCEPTED",
+      "result_name": "MAJORITY_AGREE",
+      "leader_execution_result": "SUCCESS",
+      "latency": 13.73,
+      "timestamp": "2026-10-31T09:01:07.781Z",
+      "rawModelOutput": "{\"category\": \"DATA\", \"amount\": 90, \"currency\": \"EUR\", \"quote\": \"Total due: 90 EUR\"}",
+      "parsed_valid": true,
+      "parsedFields": {
         "valid": true,
         "category": "DATA",
         "amount": 90,
         "currency": "EUR",
         "quote": "Total due: 90 EUR"
       },
-      "isParseValid": true,
-      "isExpectedHit": true,
-      "pass": true,
-      "txHash": "on-chain execution (contract state query)",
-      "verifiedAt": "2026-10-26T04:21:36.137Z"
+      "expectedFields": {
+        "amount": 90,
+        "category": "DATA",
+        "currency": "EUR"
+      },
+      "match": true,
+      "pass": true
     },
     {
       "target": "datashop/inv-f-eur.md",
+      "slug": "inv_f_eur_md",
       "runIndex": 10,
-      "resultKey": "inv-f-eur.md_10",
+      "resultKey": "rb_inv_f_eur_md_10",
       "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
       "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
-      "inputText": "Fixture content pinned on GitHub",
-      "rawModelOutput": "```json\n{\"category\": \"DATA\", \"amount\": 90, \"currency\": \"EUR\", \"quote\": \"Total due: 90 EUR\"}\n```",
-      "parsedObject": {
+      "inputUrl": "https://raw.githubusercontent.com/huzyow155/agent-allowance-fixtures/17d05116617effeaa127249914f3b4e691ecad40/datashop/inv-f-eur.md",
+      "txHash": "0xfd5c56c84342b5b94f4d67c8e825f14f1b54cca181b06f7d9666f88fa87b9bc1",
+      "receiptTriple": {
+        "status_name": "ACCEPTED",
+        "result_name": "MAJORITY_AGREE",
+        "leader_execution_result": "SUCCESS"
+      },
+      "status_name": "ACCEPTED",
+      "result_name": "MAJORITY_AGREE",
+      "leader_execution_result": "SUCCESS",
+      "latency": 17.4,
+      "timestamp": "2026-10-31T09:01:36.530Z",
+      "rawModelOutput": " {\"category\": \"DATA\", \"amount\": 90, \"currency\": \"EUR\", \"quote\": \"Total due: 90 EUR\"}",
+      "parsed_valid": true,
+      "parsedFields": {
         "valid": true,
         "category": "DATA",
         "amount": 90,
         "currency": "EUR",
         "quote": "Total due: 90 EUR"
       },
-      "isParseValid": true,
-      "isExpectedHit": true,
-      "pass": true,
-      "txHash": "on-chain execution (contract state query)",
-      "verifiedAt": "2026-10-26T04:21:39.663Z"
+      "expectedFields": {
+        "amount": 90,
+        "category": "DATA",
+        "currency": "EUR"
+      },
+      "match": true,
+      "pass": true
     }
   ]
 }

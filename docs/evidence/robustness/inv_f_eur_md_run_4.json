@@ -1,21 +1,36 @@
 {
   "target": "datashop/inv-f-eur.md",
+  "slug": "inv_f_eur_md",
   "runIndex": 4,
-  "resultKey": "inv-f-eur.md_4",
+  "resultKey": "rb_inv_f_eur_md_4",
   "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
   "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
-  "inputText": "Fixture content pinned on GitHub",
+  "inputUrl": "https://raw.githubusercontent.com/huzyow155/agent-allowance-fixtures/17d05116617effeaa127249914f3b4e691ecad40/datashop/inv-f-eur.md",
+  "txHash": "0x78e7c03c074dfa3a9ed7522a6b119720b0e9e09f97c333d6e0360f6f41b2dbc4",
+  "receiptTriple": {
+    "status_name": "ACCEPTED",
+    "result_name": "MAJORITY_AGREE",
+    "leader_execution_result": "SUCCESS"
+  },
+  "status_name": "ACCEPTED",
+  "result_name": "MAJORITY_AGREE",
+  "leader_execution_result": "SUCCESS",
+  "latency": 13.45,
+  "timestamp": "2026-10-31T08:59:03.752Z",
   "rawModelOutput": "{\"category\": \"DATA\", \"amount\": 90, \"currency\": \"EUR\", \"quote\": \"Total due: 90 EUR\"}",
-  "parsedObject": {
+  "parsed_valid": true,
+  "parsedFields": {
     "valid": true,
     "category": "DATA",
     "amount": 90,
     "currency": "EUR",
     "quote": "Total due: 90 EUR"
   },
-  "isParseValid": true,
-  "isExpectedHit": true,
-  "pass": true,
-  "txHash": "on-chain execution (contract state query)",
-  "verifiedAt": "2026-10-26T04:21:18.587Z"
+  "expectedFields": {
+    "amount": 90,
+    "category": "DATA",
+    "currency": "EUR"
+  },
+  "match": true,
+  "pass": true
 }

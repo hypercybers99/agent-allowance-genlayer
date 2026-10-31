@@ -1,21 +1,36 @@
 {
   "target": "datashop/inv-e-90.md",
+  "slug": "inv_e_90_md",
   "runIndex": 8,
-  "resultKey": "inv-e-90.md_8",
+  "resultKey": "rb_inv_e_90_md_8",
   "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
   "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
-  "inputText": "Fixture content pinned on GitHub",
+  "inputUrl": "https://raw.githubusercontent.com/huzyow155/agent-allowance-fixtures/17d05116617effeaa127249914f3b4e691ecad40/datashop/inv-e-90.md",
+  "txHash": "0xdfe4b49d91f7645b29c75385644bc3683aad2abe300266eb0ef6c5f123a16af7",
+  "receiptTriple": {
+    "status_name": "ACCEPTED",
+    "result_name": "MAJORITY_AGREE",
+    "leader_execution_result": "SUCCESS"
+  },
+  "status_name": "ACCEPTED",
+  "result_name": "MAJORITY_AGREE",
+  "leader_execution_result": "SUCCESS",
+  "latency": 13.33,
+  "timestamp": "2026-10-31T08:56:31.764Z",
   "rawModelOutput": "{\"category\": \"DATA\", \"amount\": 90, \"currency\": \"USD\", \"quote\": \"Total due: 90 USD\"}",
-  "parsedObject": {
+  "parsed_valid": true,
+  "parsedFields": {
     "valid": true,
     "category": "DATA",
     "amount": 90,
     "currency": "USD",
     "quote": "Total due: 90 USD"
   },
-  "isParseValid": true,
-  "isExpectedHit": true,
-  "pass": true,
-  "txHash": "on-chain execution (contract state query)",
-  "verifiedAt": "2026-10-26T04:20:56.823Z"
+  "expectedFields": {
+    "amount": 90,
+    "category": "DATA",
+    "currency": "USD"
+  },
+  "match": true,
+  "pass": true
 }

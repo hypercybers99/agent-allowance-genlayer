@@ -1,0 +1,56 @@
+{
+  "cloudco/inv-a-120.md": {
+    "slug": "inv_a_120_md",
+    "attempts": 10,
+    "successes": 10,
+    "parseSuccess": 10,
+    "expectedHits": 10,
+    "passRate": "10/10",
+    "passed": true
+  },
+  "cloudco/inv-a-120.html": {
+    "slug": "inv_a_120_html",
+    "attempts": 10,
+    "successes": 10,
+    "parseSuccess": 10,
+    "expectedHits": 10,
+    "passRate": "10/10",
+    "passed": true
+  },
+  "datashop/inv-e-90.md": {
+    "slug": "inv_e_90_md",
+    "attempts": 10,
+    "successes": 10,
+    "parseSuccess": 10,
+    "expectedHits": 10,
+    "passRate": "10/10",
+    "passed": true
+  },
+  "datashop/inv-f-eur.md": {
+    "slug": "inv_f_eur_md",
+    "attempts": 10,
+    "successes": 10,
+    "parseSuccess": 10,
+    "expectedHits": 10,
+    "passRate": "10/10",
+    "passed": true
+  },
+  "cloudco/inv-c-no-total.md": {
+    "slug": "inv_c_no_total_md",
+    "attempts": 10,
+    "successes": 10,
+    "parseSuccess": 10,
+    "expectedHits": 10,
+    "passRate": "10/10",
+    "passed": true
+  },
+  "cloudco/inv-h-marketing.md": {
+    "slug": "inv_h_marketing_md",
+    "attempts": 10,
+    "successes": 10,
+    "parseSuccess": 10,
+    "expectedHits": 10,
+    "passRate": "10/10",
+    "passed": true
+  }
+}

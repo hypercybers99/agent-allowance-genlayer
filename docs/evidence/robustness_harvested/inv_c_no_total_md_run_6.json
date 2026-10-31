@@ -1,0 +1,21 @@
+{
+  "target": "cloudco/inv-c-no-total.md",
+  "runIndex": 6,
+  "resultKey": "inv-c-rerun_6",
+  "contractAddress": "0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997",
+  "promptSha256": "990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb",
+  "inputText": "Fixture content pinned on GitHub",
+  "rawModelOutput": "```json\n{\"category\": \"CLOUD\", \"amount\": 0, \"currency\": \"UNCLEAR\", \"quote\": \"No final sum is assessed on this proforma notice.\"}\n```",
+  "parsedObject": {
+    "valid": true,
+    "category": "CLOUD",
+    "amount": 0,
+    "currency": "UNCLEAR",
+    "quote": "No final sum is assessed on this proforma notice."
+  },
+  "isParseValid": true,
+  "isExpectedHit": true,
+  "pass": true,
+  "txHash": "0x8006203c809adbb788c6487eee874f266021612b538a0d6fd6bbd70d84bcc184",
+  "verifiedAt": "2026-10-26T04:21:39.669Z"
+}

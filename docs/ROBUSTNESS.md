@@ -38,5 +38,19 @@ Because run 9 threw an uncaught network exception in the batch script, a standal
 - **Standalone Rerun Batch (`inv_c_rerun.json`)**: 10/10 valid JSON parses, 10/10 expected hits (`amount == 0`), latencies 8.48s - 32.29s.
 Under Part 1 Rule 9 of the build rules, an undisclosed rerun of a target counts as an iteration. Therefore, this rerun is formally classified as **Iteration 1 (Operational/RPC resilience rerun, zero prompt modifications)**.
 
-## Empirical Raw Evidence Archival (`docs/evidence/robustness/`)
-Every individual run across all 6 targets is archived on disk as an independent JSON record (`docs/evidence/robustness/<slug>_run_<N>.json`, 60 files total), complemented by aggregated target summaries (`docs/evidence/robustness/<slug>.json`). Each file records the complete transaction receipt, execution status, consensus agreement, latency, and extracted payload.
+---
+
+## 1. Batch 1: Harvested Batch (`docs/evidence/robustness_harvested/`)
+Following initial probe execution, `scripts/save_robustness_raw.js` harvested model extraction records by querying the probe's `get_result(key)` view on 2026-10-26.
+- **Nature of Records**: These records represent stored contract state read backs.
+- **Limitation**: While they confirm the stored model output and parser validity across all 6 targets (60 runs), they lack per-run transaction receipts, status_name, result_name, per-tx latencies, and transaction hashes (which recorded `on-chain execution (contract state query)`).
+- **Archival**: These 60 files have been relocated to `docs/evidence/robustness_harvested/` for complete auditability.
+
+---
+
+## 2. Batch 2: Receipt-Backed Batch of Record (`docs/evidence/robustness/`)
+To establish definitive evidence of record, a fresh 60-transaction batch was executed directly on `ProbeExtract` (`0x9EBE36E328c1A4b8609c8dcB300eF4DF90db8997`) with:
+- **Zero Prompt Modifications**: Uses the exact pre-registered prompt text (SHA-256 `990f3801f114c0a5a22839b2ae82c0f99a5e82b794129994c5e3d74da05f31eb`).
+- **Complete Receipt Triple**: Every single run records `status_name` (`ACCEPTED`/`FINALIZED`), `result_name` (`MAJORITY_AGREE`), and `leader_execution_result` (`SUCCESS`).
+- **Full Traceability**: Individual JSON files (`docs/evidence/robustness/<slug>_run_<N>.json`) record the real transaction hash, receipt timestamp, execution latency, commit-pinned input URL, raw model output from `get_result`, parser validation, and expectation match.
+- **Accounting**: Documented as an **Operational Evidence Rerun** (zero prompt modifications, identical contract code and address). All attempts and retries are captured.
