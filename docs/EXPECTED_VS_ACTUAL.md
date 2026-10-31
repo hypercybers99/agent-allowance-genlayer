@@ -4,25 +4,31 @@ This document compares the pre-registered predictions (from `fixtures/EXPECTED.m
 
 ## Canonical Runs Comparison Table (R1 - R13)
 
-| ID | Payee | Declared Amount | Declared Category | Evidence File | Predicted Decision | Predicted Reason | Actual Decision | Actual Reason | Execution Latency | Status |
-|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|
-| **R1** | CloudCo | 120 | CLOUD | `cloudco/inv-a-120.md` | `APPROVE` | `-` | `APPROVED` | `-` | 15.03s | MATCH |
-| **R2** | CloudCo | 120 | CLOUD | `cloudco/inv-a-120.html` | `APPROVE` | `-` | `APPROVED` | `-` | 18.60s | MATCH |
-| **R3** | CloudCo | 100 | CLOUD | `cloudco/inv-a-120.md` | `DENY` | `amount_mismatch` | `DENIED` | `amount_mismatch` | 15.07s | MATCH |
-| **R4** | CloudCo | 450 | CLOUD | `cloudco/inv-b-450.md` | `DENY` | `over_cap` | `DENIED` | `over_cap` | 8.45s | MATCH |
-| **R5** | CloudCo | 150 | CLOUD | `cloudco/inv-d-injection.md` | `ASK_OWNER` | `tripwire` | `OWNER_REJECTED`* | `tripwire` | 8.49s | MATCH |
-| **R6** | CloudCo | 120 | CLOUD | `cloudco/inv-c-no-total.md` | `ASK_OWNER` | `amount_unclear` | `OWNER_APPROVED`* | `quote_not_found` | 15.09s | MATCH |
-| **R7** | DataShop | 90 | DATA | `datashop/inv-e-90.md` | `APPROVE` | `-` | `APPROVED` | `-` | 14.99s | MATCH |
-| **R8** | DataShop | 90 | DATA | `datashop/inv-f-eur.md` | `DENY` | `currency_mismatch` | `DENIED` | `currency_mismatch` | 18.44s | MATCH |
-| **R9** | CloudCo | 80 | CLOUD | `adsy/inv-g-80.md` | `DENY` | `evidence_not_bound` | `DENIED` | `evidence_not_bound` | 8.52s | MATCH |
-| **R10**| AdSy | 80 | MARKETING | `adsy/inv-g-80.md` | `DENY` | `payee_unknown` | `DENIED` | `payee_unknown` | 15.24s | MATCH |
-| **R11**| CloudCo | 60 | MARKETING | `cloudco/inv-h-marketing.md` | `DENY` | `category_not_allowed` | `DENIED` | `category_not_allowed` | 11.82s | MATCH |
-| **R12**| CloudCo | 60 | CLOUD | `cloudco/inv-h-marketing.md` | `DENY` | `category_not_allowed` | `DENIED` | `category_not_allowed` | 18.41s | MATCH |
-| **R13**| CloudCo | 180 | CLOUD | `cloudco/inv-a-120.md` | `DENY` | `over_budget` | `DENIED` | `over_budget` | 11.77s | MATCH |
+| ID | Payee | Declared | Evidence File | Predicted Dec (Reason) | Actual Dec (Reason) | Decision Match | Reason Match | Latency | Tx Hash |
+| :--- | :--- | :---: | :--- | :---: | :---: | :---: | :---: | :---: | :--- |
+| **R1** | CloudCo | 120 CLOUD | `cloudco/inv-a-120.md` | `APPROVE` (`-`) | `APPROVED` (`-`) | **YES** | **YES** | 15.03s | `0x1ea17415...` |
+| **R2** | CloudCo | 120 CLOUD | `cloudco/inv-a-120.html` | `APPROVE` (`-`) | `APPROVED` (`-`) | **YES** | **YES** | 18.60s | `0x2caae20d...` |
+| **R3** | CloudCo | 100 CLOUD | `cloudco/inv-a-120.md` | `DENY` (`amount_mismatch`) | `DENIED` (`amount_mismatch`) | **YES** | **YES** | 15.07s | `0x666595e6...` |
+| **R4** | CloudCo | 450 CLOUD | `cloudco/inv-b-450.md` | `DENY` (`over_cap`) | `DENIED` (`over_cap`) | **YES** | **YES** | 8.45s | `0x2e84f9c7...` |
+| **R5** | CloudCo | 150 CLOUD | `cloudco/inv-d-injection.md` | `ASK_OWNER` (`tripwire`) | `OWNER_REJECTED`* (`tripwire`) | **YES** | **YES** | 8.49s | `0xeabafd32...` |
+| **R6** | CloudCo | 120 CLOUD | `cloudco/inv-c-no-total.md` | `ASK_OWNER` (`amount_unclear`) | `OWNER_APPROVED`* (`quote_not_found`) | **YES** | **NO** | 15.09s | `0xa5c8bd18...` |
+| **R7** | DataShop | 90 DATA | `datashop/inv-e-90.md` | `APPROVE` (`-`) | `APPROVED` (`-`) | **YES** | **YES** | 14.99s | `0x6544da67...` |
+| **R8** | DataShop | 90 DATA | `datashop/inv-f-eur.md` | `DENY` (`currency_mismatch`) | `DENIED` (`currency_mismatch`) | **YES** | **YES** | 18.44s | `0x4c8b4ec6...` |
+| **R9** | CloudCo | 80 CLOUD | `adsy/inv-g-80.md` | `DENY` (`evidence_not_bound`) | `DENIED` (`evidence_not_bound`) | **YES** | **YES** | 8.52s | `0x07233108...` |
+| **R10** | AdSy | 80 MARKETING | `adsy/inv-g-80.md` | `DENY` (`payee_unknown`) | `DENIED` (`payee_unknown`) | **YES** | **YES** | 15.24s | `0x78e06d23...` |
+| **R11** | CloudCo | 60 MARKETING | `cloudco/inv-h-marketing.md` | `DENY` (`category_not_allowed`) | `DENIED` (`category_not_allowed`) | **YES** | **YES** | 11.82s | `0x702d993b...` |
+| **R12** | CloudCo | 60 CLOUD | `cloudco/inv-h-marketing.md` | `DENY` (`category_not_allowed`) | `DENIED` (`category_not_allowed`) | **YES** | **YES** | 18.41s | `0x7bdb2579...` |
+| **R13** | CloudCo | 180 CLOUD | `cloudco/inv-a-120.md` | `DENY` (`over_budget`) | `DENIED` (`over_budget`) | **YES** | **YES** | 11.77s | `0x2c5183df...` |
 
-*\*Notes on R5 and R6*:
-- R5 initially evaluated to `PENDING` (`ASK_OWNER`) on-chain due to the injection tripwire, and was subsequently resolved by the owner via `resolve_spend(5, false)` resulting in final status `OWNER_REJECTED`.
-- R6 initially evaluated to `PENDING` (`ASK_OWNER`) on-chain because the proforma notice had no total (quote check failed), and was subsequently resolved by the owner via `resolve_spend(6, true)` resulting in final status `OWNER_APPROVED`.
+### Match Summary & R6 Reason Discrepancy
+- **Decision Match**: **13/13 (100.0%)** — All 13 canonical spend decisions match expected governance paths.
+- **Reason Match**: **12/13 (92.3%)** — 12 of 13 reason codes match pre-registration exactly.
+- **R6 Reason Discrepancy Analysis**:
+  In `fixtures/EXPECTED.md`, R6 (`inv-c-no-total.md`) was predicted to yield `ASK_OWNER` with reason `amount_unclear`. On chain, the contract returned `ASK_OWNER` with reason `quote_not_found`. In `contracts/AllowanceVault.py`, verbatim quote and number validation occurs at Check 3 before ambiguity evaluation at Check 4. Because `inv-c-no-total.md` has amount 0, `number_in_quote(quote, 0)` returned `False`, causing `quote_ok` to be `False` and triggering `quote_not_found` at Check 3. The spend was safely held in `PENDING` for human review, achieving the intended safe governance outcome. Full root cause analysis and chain data are documented in [`docs/EXPECTED_AMENDMENT.md`](docs/EXPECTED_AMENDMENT.md).
+
+*\*Notes on R5 and R6 Two-Step Workflow*:
+- **R5**: Entered `PENDING` (`ASK_OWNER`) on-chain due to the injection tripwire, and was subsequently resolved by the owner via `resolve_spend(5, false)` resulting in final status `OWNER_REJECTED`.
+- **R6**: Entered `PENDING` (`ASK_OWNER`) on-chain due to quote check failure on unstated total, and was subsequently resolved by the owner via `resolve_spend(6, true)` resulting in final status `OWNER_APPROVED`.
 
 ## Latency & Pipeline Analysis
 
