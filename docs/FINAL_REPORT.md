@@ -49,7 +49,7 @@ STATUS: READY
 ### Robustness Misses & Deviations
 - **Parse Failures**: 0 / 60 (100% strict JSON validity without markdown fences or comments).
 - **Target Extraction Misses**: 0 / 60 (100% target accuracy).
-- **Transient Gateway Retries**: 2 transient HTTP 502 HTML responses from RPC during writes (`rb_inv_a_120_html_8` and `rb_inv_c_no_total_md_6`), safely retried and recovered with verified on-chain receipts without data loss or gaps.
+- **Transient Gateway Retries**: no record saved (two transient RPC write retries observed during batch execution were recovered in memory by write retry logic with no persistent failure record written to disk; not claimed).
 
 ---
 
@@ -113,7 +113,7 @@ PASSED: All referenced documentation paths exist on disk!
 FINALIZATION STATUS COUNTS
 =================================================================================
   FINALIZED                : 111 transactions
-  NOT_FOUND_IN_RPC         : 2 transactions (unindexed historical deploys)
+  NOT_FOUND_IN_RPC         : 2 transactions (deploy transactions not found on the RPC; cause not determined; source compared with the code stored on the contract address)
 ```
 
 ---
@@ -122,7 +122,7 @@ FINALIZATION STATUS COUNTS
 
 ### Test & Hygiene Suite (`npm run check`)
 ```
-Ran 18 tests in 18.530s (OK)
+Ran 18 tests in 19.309s (OK)
 - Layer 1 Fuzz: 5,000 cases verified with 100% oracle parity.
 - Layer 2 Fuzz: 5,000 state transitions verified with 100% invariant conservation.
 - ASCII Check: 5 contracts PASSED (100% pure ASCII).
@@ -139,4 +139,4 @@ All hexadecimal strings and addresses in this report exist in tracked repository
 ## 6. Deviations & Unmeasured Scope
 - **Calendar-Based Reset Windows**: Not measured (limits are per-spend, total budget, and max spend count as specified).
 - **R6 Reason Pre-registration Divergence**: Expected `amount_unclear`, actual `quote_not_found`. Resolved by owner as intended; safety boundary preserved.
-- **Historical Deploy Transactions**: Deploy transactions for `AllowanceVault` (`0x5396...`) and `SpendGate` (`0x3ab3...`) are no longer indexed in RPC history due to node history rotation, but contract code is permanently verified on-chain via `gen_getContractCode`.
+- **Historical Deploy Transactions**: deploy transactions not found on the RPC; cause not determined; source compared with the code stored on the contract address.

@@ -43,11 +43,10 @@ This document records the exact hashes, addresses, latencies, and source code ve
 
 ## 3. Source Code Byte-for-Byte Verification Method
 To verify that the deployed on-chain contract code matches the local source code byte-for-byte:
-1. Query the deployment transaction via RPC method `eth_getTransactionByHash`.
-2. Extract the base64-encoded Python source payload from `result.data.contract_code`.
-3. Decode the base64 payload into raw UTF-8 string bytes.
-4. Calculate the SHA-256 hash of the decoded on-chain source string.
-5. Compare against the local file's SHA-256 hash.
+1. For contracts with accessible deploy transaction payloads, query via RPC method `eth_getTransactionByHash` and extract the base64-encoded Python source payload from `result.data.contract_code`.
+2. For `AllowanceVault` and `SpendGate`: deploy transactions not found on the RPC; cause not determined; source compared with the code stored on the contract address via `gen_getContractCode`.
+3. Calculate the SHA-256 hash of the decoded on-chain source string.
+4. Compare against the local file's SHA-256 hash.
 
 All contracts achieved exact, byte-for-byte parity without any extraneous envelope bytes.
 

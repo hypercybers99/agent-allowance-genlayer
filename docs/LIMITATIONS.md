@@ -38,3 +38,7 @@ This document records the foundational constraints and limitations of the Agent 
 ## 7. Fictional Vendors and Test Fixtures
 - All fixtures in this repository and the companion fixtures repository (`agent-allowance-fixtures`) use clearly fictional vendor entities (`cloudco.example`, `datashop.example`, `adsy.example`).
 - No references to real commercial entities or living individuals are used.
+
+## 8. Historical Deployment Transaction Lookups
+- For active contracts `AllowanceVault` and `SpendGate`: deploy transactions not found on the RPC; cause not determined; source compared with the code stored on the contract address.
+
